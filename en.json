@@ -1,0 +1,958 @@
+{
+  "common": {
+    "appName": "WELO",
+    "email": "Email",
+    "fullName": "Full name",
+    "displayName": "Display name",
+    "spaceName": "Space name",
+    "optionalAvatar": "Avatar (optional)",
+    "and": "and",
+    "guest": "Guest",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "on": "On",
+    "off": "Off",
+    "save": "Save",
+    "close": "Close",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "knock": "Knock",
+    "allow": "Allow",
+    "reconnect": "Reconnect",
+    "icon": "Icon",
+    "title": "Title",
+    "createdOn": "Created On",
+    "actions": "Actions",
+    "description": "Description",
+    "openResources": "Open resources",
+    "requestToTalk": "Request to Talk",
+    "connectionIssues": "Connection Issues?",
+    "headphonesOn": "Turn on speakers",
+    "headphonesOff": "Turn off speakers",
+    "muteMicrophone": "Mute microphone",
+    "unmuteMicrophone": "Unmute microphone",
+    "startCamera": "Start camera",
+    "stopCamera": "Stop camera",
+    "startScreenshare": "Share your screen",
+    "stopScreenshare": "Stop sharing your screen",
+    "showSpace": "Return to Space View",
+    "microphones": "Microphones",
+    "speakers": "Speakers",
+    "cameras": "Cameras",
+    "supportChat": "Support Chat",
+    "removeBackgroundNoise": "Remove background noise",
+    "blurCameraBackground": "Blur Camera Background",
+    "connectionDidBecomePoor": "Your connection is poor.",
+    "connectionDidSuggestStopVideo": "Your connection is poor. We recommend turning off your video.",
+    "test": "Test",
+    "connectionOffline": "Your internet connection seems to be offline.",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "remove": "Remove",
+    "logout": "Logout",
+    "loading": "Loading...",
+    "processing": "Processing...",
+    "successful": "Successful",
+    "unsuccessful": "Unsuccessful",
+    "selectMap": "Select a map for the space:",
+    "signInLinkSent": "A sign in email with additional instructions was sent to <b>{email}</b>.  Please click on the sign in link in the email to continue.",
+    "confirmEmail": "Please enter your email for confirmation",
+    "lockedRoomWithRoomLabel": "{roomLabel} has been locked.",
+    "lockedRoomWithoutRoomLabel": "The room has been locked.",
+    "unlockedRoomWithRoomLabel": "{roomLabel} has been unlocked.",
+    "unlockedRoomWithoutRoomLabel": "The room has been unlocked.",
+    "guestReceptionArea": "Guest reception area",
+    "broadcastMessageSent": "The message has been broadcast to the space.",
+    "roomMessageSentWithRoomLabel": "The room message has been sent to {roomLabel}.",
+    "roomMessageSentWithoutRoomLabel": "The room message has been sent.",
+    "userMessageSent": "The message has been sent to {displayName}.",
+    "getUserSent": "A get request has been sent to {displayName}.",
+    "confirmDeleteOnlySpace": "\"{spaceName}\" is the only space in the organization.  Are you sure you want to delete it?",
+    "confirmDeleteSpaceTitle": "Delete {spaceName}",
+    "confirmDeleteSpace": "Deleting the space \"{spaceName}\" will permanently remove the space.",
+    "confirmDeleteSpacePrompt": "Confirm deletion by typing the space name \"{spaceName}\" below:",
+    "confirmDeleteSpaceInputPlaceholder": "Enter the space name to confirm deletion",
+    "finalConfirmDeleteSpace": "Are you absolutely sure you want to delete \"{spaceName}\"?",
+    "spaceDeleted": "The space \"{spaceName}\" has been deleted.",
+    "networkIssues": "Network issues",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "roles": {
+      "administrator": "Administrator",
+      "moderator": "Moderator",
+      "member": "Member"
+    },
+    "errors": {
+      "nobodyInRoom": "Nobody is in the room.",
+      "onlyOneInRoom": "You are the only one in the room.",
+      "messageTooLong": "The message is too long.",
+      "insufficientPrivilege": "Insufficient privilege.",
+      "invalidFileType": "Please select an image file for the avatar.",
+      "spaceNameRequired": "Please enter a name for the space.",
+      "permissionDenied": "We can't access your camera.",
+      "signInLinkExpiredNewLinkRequested": "The sign in link expired or was already used. We sent a new sign in link to your email address",
+      "loginRejectedEmailNotFound": "Unable to login because you have not signed up.",
+      "unableToSendSignInLink": "Unable to send the sign in link to the specified email address.",
+      "unableToSignInEmailLink": "Unable to sign in with the email link. Please make sure that the email entered is the same as the sign in email address.",
+      "unableToLockRoom": "Unable to lock the room.",
+      "unableToUnlockRoom": "Unable to unlock the room.",
+      "unableToSendSpaceActionMessage": "Unable to broadcast the message to the space.",
+      "unableToSendUserMessage": "Unable to send the message to {displayName}.",
+      "unableToSendRoomMessageWithRoomLabel": "Unable to send the room message to {roomLabel}.",
+      "unableToSendRoomMessageWithoutRoomLabel": "Unable to send the room message.",
+      "unableToSendGetUser": "Unable to send a get request to {displayName}.",
+      "confirmDeleteSpaceInvalidConfirmMessage": "Please enter the space name \"{spaceName}\" to confirm.",
+      "unableToDeleteSpace": "Unable to delete the space \"{spaceName}\".",
+      "unableToConnect": "Encountered network issues.  Please click the button below to connect again."
+    }
+  },
+  "admin": {
+    "spaceTemplateName": "Template Name",
+    "spaceTemplateType": "Map Type",
+    "spaceTemplateDescription": "Template Description",
+    "spaceTemplateBackgroundColor": "Background Color #HEX",
+    "spaceTemplateSouthWestBound": "SouthWestBound LatLng",
+    "spaceTemplateNorthEastBound": "NorthEastBound LatLng",
+    "spaceTemplateRoomSettings": "Room Settings",
+    "spaceTemplateGuestReceptionArea": "@:common.guestReceptionArea?",
+    "spaceTemplateUseRoomAsGuestReceptionArea": "Use this room as the guest reception area.",
+    "spaceTemplateSaved": "Space template settings successfully saved.",
+    "spaceTemplateAvatarScale": "Avatar Scale Factor",
+    "spaceTemplateMaxZoom": "Max Zoom Level",
+    "spaceTemplateInitialZoom": "Initial Zoom Level",
+    "spaceTemplateScaleMaxLevel": "Scale Avatar for Maximum Zoom Level",
+    "spaceTemplatePublic": "Public Map",
+    "searchInputPlaceholder": "Type to search against {spaceCount} spaces",
+    "createSpaceTemplate": "Create new space template",
+    "show": "Show",
+    "hide": "Hide",
+    "details": "Details",
+    "spaceId": "Space ID",
+    "hideDetails": "Hide Details",
+    "showDetails": "Show Details",
+    "spaceName": "Space Name",
+    "createdAt": "Created",
+    "organizationName": "Organization Name",
+    "totalUserCount": "Total Users",
+    "unclaimedInvites": "Unclaimed Invites",
+    "unclaimedInviteTooltip": "The invite was sent on {dateTime}",
+    "lastSpaceEnteredAt": "Last Entered This Space",
+    "organizationRole": "Organization Role",
+    "spaceRole": "Space Role",
+    "remove": "Remove",
+    "clear": "Clear",
+    "editRooms": "Edit Rooms",
+    "filter": "Filter",
+    "exportAllUsers": "Export All Users",
+    "roleChanged": "The role for {fullName} has been changed.",
+    "memberRemoved": "{fullName} has been removed.",
+    "confirmRemove": "Are you sure you want to remove {fullName} ({email}) from the space?",
+    "errors": {
+      "insufficientPrivilege": "@:common.errors.insufficientPrivilege",
+      "unableToChangeRole": "Unable to change the role for {fullName}.",
+      "unableToRemoveMember": "Unable to remove {fullName}.",
+      "unableToExportAllUsers": "Unable to export the user data."
+    }
+  },
+  "navigationBar": {
+    "findUsers": "Find Users",
+    "findUsersTooltip": "Search the space roster for users",
+    "inviteMembers": "Invite Members",
+    "guestLink": "Guest Link",
+    "logout": "Logout",
+    "help": "Help",
+    "userGuide": "User Guide",
+    "newFeatures": "New Features",
+    "submitFeedback": "Submit Feedback",
+    "settings": "Settings",
+    "mySettings": "My Settings",
+    "organizationSettings": "Organization Settings",
+    "spaceSettings": "Space Settings",
+    "superAdminSettings": "Super Admin",
+    "superAdminSpacePresence": "Space Presence",
+    "superAdminSpaceTemplates": "Space Templates",
+    "superAdminEmailEvents": "@:emailEventAdminView.emailEvents",
+    "homeRoom": "Home Room",
+    "goHomeTooltip": "Go to your home room",
+    "alreadyInHomeRoom": "You are already in your home room.",
+    "setHomeRoomInstructions": "You currently do not have a home room set.  To set a home room, right click on a room and select the \"Set Home Room\" menu item."
+  },
+  "rosterSidebar": {
+    "spaceRoster": "Space Roster",
+    "searchUserPlaceholder": "Enter the name of a user",
+    "clearSearchTooltip": "Clear the search results",
+    "clearSearchResults": "Clear 1 search result | Clear {count} search results",
+    "noSearchResults": "No users found.",
+    "usersInSameRoom": "Users in your room ({userCount})",
+    "onlyOneInRoom": "@:common.errors.onlyOneInRoom",
+    "usersInOtherRooms": "Users in the other rooms ({userCount})",
+    "noOneInOtherRooms": "No one else is in the other rooms.",
+    "usersOffline": "Users who are offline ({userCount})",
+    "noOneOffline": "No one is offline.",
+    "slackUsers": "Users in Slack ({userCount})",
+    "noSlackUsers": "No Slack users."
+  },
+  "rosterSection": {
+    "clickSectionTooltip": "Click to expand/collapse",
+    "locateUser": "Locate User",
+    "askToJoin": "Ask to Join",
+    "sendMessage": "Send Message",
+    "slackAskToJoinMessage": "<@{slackUserId}> invites you to a meeting in WELO.\n<{joinUrl}|Please click here to join.>",
+    "errors": {
+      "unableToAskNoSlackInfo": "Unable to get the relevant Slack information to ask the user to join.",
+      "userInRoom": "{displayName} is already in the room."
+    }
+  },
+  "videoBarHeader": {
+    "videoSettings": "Video settings",
+    "videoSettingsTooltip": "Change video settings",
+    "showVideosInsideAvatars": "Show Videos Inside Avatars",
+    "hideVideosInsideAvatars": "Hide Videos Inside Avatars",
+    "showLocalVideo": "Show My Video",
+    "hideLocalVideo": "Hide My Video",
+    "showRemoteVideos": "Show All Incoming Videos",
+    "hideRemoteVideos": "Hide All Incoming Videos",
+    "showActiveSpeaker": "Show Active Speaker Only (Beta)",
+    "exitActiveSpeaker": "Exit Active Speaker Mode (Beta)",
+    "showVideoGallery": "Show video gallery",
+    "hideVideoGallery": "Hide video gallery"
+  },
+  "media": {
+    "microphoneMuted": "{displayName} muted your microphone.",
+    "cameraTurnedOff": "{displayName} turned off your camera.",
+    "inputSelected": "Selected microphone: {inputSelected}",
+    "outputDeviceNotAvailable": "We couldn't find an output device to play audio.",
+    "revokedPermissionToTalk": "{displayName} has revoked your permission to talk.",
+    "microphoneTurnedOff": "Microphone muted. Your selected microphone is no longer available.",
+    "videoTurnedOff": "Camera turned off. Your selected camera device is no longer available.",
+    "mediaAutoTurnedOff": "Your media is turned off because you are the only one in the room.",
+    "unableToConnectToMediaServer": "Unable to connect to the media server. Please refresh the page and try again."
+  },
+  "videoClipFavoritesModal": {
+    "searchVideoClips": "Search for video clips...",
+    "searchInputPlaceholder": "Type in keyword",
+    "playInRoom": "Play in room",
+    "sec": "1 SEC | {count} SECS",
+    "videoClipModalTitle": "Manage favorites and select a clip",
+    "videoClipModalText": "Add and manage favorites to play a clip during a meeting. Clicking on your favorite clip will share it with the other meeting participants.",
+    "addToFavorites": "Add to favorites",
+    "removeFromFavorites": "Remove from favorites"
+  },
+  "mediaControls": {
+    "requestToTalkTooltip": "This room is in presenter mode and requires a presenter to grant you permission to talk",
+    "mediaDisabled": "Media is disabled for this room.",
+    "microphoneSettings": "Microphone",
+    "cameraSettings": "Camera",
+    "headphoneSettings": "Speaker"
+  },
+  "getStartedView": {
+    "createNewTitle": "Try @:common.appName with your team, for free.",
+    "createNewText": "Create a brand new workspace for you and your team.",
+    "createNewWorkspace": "Create a workspace",
+    "existingUser": "Already a @:common.appName user?",
+    "loginNow": "Login Now",
+    "joinExistingText": "Looking to join your team's existing workspace but don't yet have a user account? Ask your team's @:common.appName administrator for an invitation."
+  },
+  "createAccountView": {
+    "enterEmail": "First, enter your email",
+    "useWorkEmail": "We suggest using the email address you use at work.",
+    "emailPlaceholder": "name@work-email.com",
+    "consentTextPrefix": "By continuing, you're agreeing to our"
+  },
+  "setupOrganizationView": {
+    "workTogether": "@:common.appName gives your team a place to talk and work together",
+    "organizationName": "What's the name of your organization?",
+    "templateInfo": "Room/Seat count: {roomCount}/{seatCount}",
+    "errors": {
+      "notFromEmailLink": "Cannot continue because the URL does not contain some required information.",
+      "unableToGetSpaceTemplates": "Unable to get the space templates.",
+      "unableToCreateUser": "Unable to create the user.",
+      "unableToCreateOrganization": "Unable to create the organization.",
+      "unableToCreateSpace": "Unable to create the space."
+    }
+  },
+  "claimInviteView": {
+    "guest": "a guest",
+    "claimInvite": "Claim invite",
+    "goToLogin": "Click here to go to the Login page.",
+    "claimInProgress": "Setting up your new environment...",
+    "differentEmailsPrompt": "You are signed in as <b>{signedInEmail}</b> but the invite is for <b>{inviteeEmail}</b>. Do you want to sign out now and claim the invite using <b>{inviteeEmail}</b>?",
+    "errors": {
+      "inviteNotFound": "The invite cannot be found.",
+      "inviteAlreadyClaimed": "The invite has already been claimed.",
+      "invitedToSpacesNotFound": "The space(s) cannot be found.",
+      "unableToClaimInvite": "Unable to claim the invite."
+    }
+  },
+  "guestAccessView": {
+    "userAlreadyLoggedInEnter": "Entering space...",
+    "guestAccess": "Guest access",
+    "errors": {
+      "unableToLogin": "Unable to login as a guest.",
+      "unableToAccess": "Unable to access the space.",
+      "unableToSetCustomClaims": "Unable to set up the security."
+    }
+  },
+  "guestAccessErrorView": {
+    "errors": {
+      "invalidGuestAccessId": "The guest access id is invalid.",
+      "guestAccessExpired": "The guest access has expired.  Please ask the person who gave you the guest link for a new link."
+    }
+  },
+  "allowSafariView": {
+    "useOtherBrowsers": "The Safari browser does not provide a great audio/video experience.  We recommend to use Chrome, Firefox or Edge.",
+    "clickToUseSafari": "Click here to use Safari anyway"
+  },
+  "internetExplorerNotSupportedView": {
+    "notSupported": "@:common.appName cannot be run on Internet Explorer.  Please use Chrome, Firefox or Edge instead."
+  },
+  "operaNotSupportedView": {
+    "notSupported": "@:common.appName cannot be run on Opera.  Please use Chrome, Firefox or Edge instead."
+  },
+  "chromeiOSNotSupportedView": {
+    "notSupported": "@:common.appName cannot be run on Chrome/iOS.  Please use the Safari browser instead."
+  },
+  "oldSessionDisconnectView": {
+    "disconnected": "You have been disconnected from the space because you entered a space from another browser tab.",
+    "reconnectToSpace": "Reconnect to Space"
+  },
+  "forcedDisconnectView": {
+    "disconnected": "You have been disconnected from the space by another user."
+  },
+  "spaceDeletedView": {
+    "spaceDeleted": "The space that you were in has just been deleted by an administrator.",
+    "notMemberOfOtherSpaces": "You are not a member of any other spaces.  Please ask your administrator to invite you to other spaces.",
+    "memberOfOtherSpaces": "You are a member of at least one other space.  Please click the button below to go to another space.",
+    "goToAnotherSpace": "Go to another space"
+  },
+  "checkMeetingReadinessView": {
+    "checkMeetingReadiness": "Check meeting readiness.",
+    "refreshToCheckAgain": "Refresh the page to run the check again."
+  },
+  "unauthorizedView": {
+    "unauthorizedToAccess": "You are not authorized to access this page."
+  },
+  "loginView": {
+    "login": "Login",
+    "success": "Successfully signed in!",
+    "switchApplication": "You can switch back to your other @:common.appName application.",
+    "instructions": "We'll email you a magic link for a password-free sign in.",
+    "signInProcesssing": "We're signing you in...",
+    "loginInProgress": "Logging in..."
+  },
+  "selectSpaceView": {
+    "clickToEnter": "Click on a space below to enter",
+    "memberCount": "Member count: {memberCount}",
+    "errors": {
+      "unableToGetSpaces": "Unable to get the spaces.",
+      "noSpaces": "No spaces found."
+    }
+  },
+  "spaceView": {
+    "errors": {
+      "invalidSpace": "The space that you are trying to enter does not exist.",
+      "unableToEnterSpace": "Unable to enter the space.",
+      "invalidSpaceOrInsufficientPrivilege": "You do not have permission to enter the space or the space does not exist.  Please reach out to a space member to get an invitation or request guest access."
+    }
+  },
+  "mapView": {
+    "enterSpace": "Double click on a room to enter the space.",
+    "enterRoom": "Double click on a room to enter.",
+    "knockRoomReqSent": "A knock request has been sent.",
+    "requestToTalkSent": "A request to talk request has been sent.",
+    "roomIsLocked": "Room is locked",
+    "roomLabelToolTip": "Toggle room labels",
+    "errors": {
+      "unableToRequestToJoinAnotherRoom": "You can only invite the user to your own room.",
+      "unableToGetFullRoom": "Cannot get {displayName} because the room is full.",
+      "unableToEnterFullRoom": "Cannot enter the room because the room is full.",
+      "unableToEnterLockedRoom": "Cannot enter the room because the room is locked.",
+      "unableToSendKnockRoomReq": "Unable to send a knock request.",
+      "unableToSendKnockRoomRsp": "Unable to send a knock response.",
+      "unableToKnockFullRoom": "The room is full.",
+      "unableToSendRequestToTalk": "Unable to send a request to talk request.",
+      "unableToSendRequestToTalkRsp": "Unable to send a request to talk response."
+    }
+  },
+  "oauthRedirectView": {
+    "integratedWithApplication": "Successfully integrated with {applicationName}.",
+    "errors": {
+      "unableToIntegrateWithApplication": "Unable to integrate with {applicationName}.",
+      "unableToIntegrateWithApplicationNoCode": "Unable to integrate with {applicationName} because the code is missing.",
+      "unableToIntegrateWithApplicationUnexpectedState": "Unable to integrate with {applicationName} because the state is unexpected.",
+      "unableToIntegrateWithApplicationUnexpectedApplication": "Unable to integrate with {applicationName} because the application is unexpected."
+    }
+  },
+  "emailEventAdminView": {
+    "emailEvents": "Email Events",
+    "period": "Period: {startPeriod} to {endPeriod} (past {numberOfDays} days)",
+    "numberOfEmailEvents": "Number of email events: {eventCount}",
+    "numberOfFailures": "Number of failures: {failureCount} ({failureRate}% failure rate)",
+    "filterPlaceholder": "Enter a recipient email, email type, or event type to filter",
+    "noMatchesFound": "No matches found.",
+    "eventDateHeader": "Event date",
+    "recipientHeader": "Recipient",
+    "emailTypeHeader": "Email type",
+    "eventTypeHeader": "Event type",
+    "eventIdHeader": "Event id",
+    "eventIdCopied": "The event id has been copied to the clipboard.",
+    "errors": {
+      "unableToGetEmailEvents": "Unable to get the email events."
+    }
+  },
+  "avatarImagePicker": {
+    "addImagePlaceholder": "Click here to add",
+    "selectFile": "Select file",
+    "takeWebcam": "Take from Webcam",
+    "takePhoto": "Take photo",
+    "rotateAvatarTooltip": "Rotate the avatar by 90 degrees"
+  },
+  "spaceTemplatePicker": {
+    "templateInfo": "Room/Seat count: {roomCount}/{seatCount}",
+    "confirmNewMap": "Are you sure you want to change the map for the space?",
+    "errors": {
+      "unableToGetSpaceTemplates": "Unable to get the space templates."
+    }
+  },
+  "quickActionDropup": {
+    "dropupTooltip": "Quick actions",
+    "broadcastToSpace": "Broadcast to Space",
+    "askEveryoneToJoin": "Ask Everyone to Join",
+    "shareVideoClip": "Share Video Clip",
+    "manageResources": "Manage Resources",
+    "getAllUsersSent": "A get all users request has been sent.",
+    "errors": {
+      "unableToSendGetAllUsers": "Unable to send a get all users request."
+    }
+  },
+  "roomChat": {
+    "titleWithRoomLabel": "Chat in {roomLabel}",
+    "titleWithoutRoomLabel": "Chat in room",
+    "inputPlaceholder": "Write to room.",
+    "initializing": "Initializing Room Chat",
+    "errors": {
+      "tryAgain": "Unable to send the chat message because the room chat is being initialized.  Please try to send the chat message again in a couple of seconds.",
+      "unableToSendChatMessage": "Unable to send the chat message."
+    }
+  },
+  "organizationSettings": {
+    "organizationSettingsHeader": "Organization Settings",
+    "membersIn": "Members in",
+    "membersInOrganization": "@:organizationSettings.membersIn {organizationName}",
+    "editOrganizationName": "Edit name",
+    "organizationName": "Organization name",
+    "fullNameHeader": "@:common.fullName",
+    "emailHeader": "@:common.email",
+    "roleHeader": "Organization role",
+    "removeHeader": "@:common.remove",
+    "organizationNameChanged": "The organization name has been changed.",
+    "roleChanged": "The role for {fullName} has been changed.",
+    "memberRemoved": "{fullName} has been removed.",
+    "confirmRemove": "Are you sure you want to remove {fullName} ({email}) from the organization?",
+    "errors": {
+      "insufficientPrivilege": "@:common.errors.insufficientPrivilege",
+      "noOrganizations": "No organizations found.",
+      "unableToGetOrganizations": "Unable to get the organizations.",
+      "unableToGetMembers": "Unable to get the members for the organization.",
+      "unableToChangeOrganizationName": "Unable to change the organization name.",
+      "unableToChangeRole": "Unable to change the role for {fullName}.",
+      "unableToRemoveMember": "Unable to remove {fullName}."
+    }
+  },
+  "spaceSettings": {
+    "spaceSettingsHeader": "Space Settings",
+    "spacesIn": "Spaces in",
+    "spacesInOrganization": "@:spaceSettings.spacesIn {organizationName}",
+    "createSpace": "Create space",
+    "map": "Map",
+    "memberCount": "Member count",
+    "allOrganizations": "All organizations",
+    "errors": {
+      "noSpaces": "No spaces found.",
+      "unableToGetSpaces": "Unable to get the spaces."
+    }
+  },
+  "createSpace": {
+    "newSpace": "New space",
+    "errors": {
+      "noOrganizations": "Unable to create the space because no organizations were selected.",
+      "noSpaceTemplates": "Unable to create the space because no space templates were selected.",
+      "unableToCreateSpace": "Unable to create the space."
+    }
+  },
+  "editSpace": {
+    "editSpaceHeader": "Edit settings",
+    "editSpaceWithNameHeader": "Edit settings for {spaceName}",
+    "mediaRegion": "Media region",
+    "membersInSpace": "Members in {spaceName} ({memberCount})",
+    "unclaimedInvitesForSpace": "Unclaimed invites for {spaceName} ({unclaimedInviteCount})",
+    "fullNameHeader": "@:common.fullName",
+    "emailHeader": "@:common.email",
+    "roleHeader": "Space role",
+    "removeHeader": "@:common.remove",
+    "inviteeEmailHeader": "Invitee email",
+    "sentOnHeader": "Sent on",
+    "spaceNameChanged": "The space name has been changed.",
+    "mediaRegionChanged": "The media region has been changed.",
+    "spaceTemplateChanged": "The map has been changed.",
+    "roleChanged": "The role for {fullName} has been changed.",
+    "memberRemoved": "{fullName} has been removed.",
+    "unclaimedInviteRemoved": "The unclaimed invite for {inviteeEmail} has been removed.",
+    "unnamedSpace": "Unnamed Space",
+    "confirmRemoveMember": "Are you sure you want to remove {fullName} ({email}) from the space?",
+    "confirmRemoveUnclaimedInvite": "Are you sure you want to remove the unclaimed invite for {inviteeEmail}?",
+    "editAnotherSpace": "Edit another space",
+    "mediaRegions": {
+      "usEast1": "US East (N. Virginia)",
+      "usEast2": "US East (Ohio)",
+      "usWest1": "US West (N. California)",
+      "usWest2": "US West (Oregon)",
+      "afSouth1": "Africa (Cape Town)",
+      "apSouth1": "Asia Pacific (Mumbai)",
+      "apNortheast2": "Asia Pacific (Seoul)",
+      "apSoutheast1": "Asia Pacific (Singapore)",
+      "apSoutheast2": "Asia Pacific (Sydney)",
+      "apNortheast1": "Asia Pacific (Tokyo)",
+      "caCentral1": "Canada (Central)",
+      "euCentral1": "Europe (Frankfurt)",
+      "euWest1": "Europe (Ireland)",
+      "euWest2": "Europe (London)",
+      "euSouth1": "Europe (Milan)",
+      "euWest3": "Europe (Paris)",
+      "euNorth1": "Europe (Stockholm)",
+      "saEast1": "South America (São Paulo)"
+    },
+    "errors": {
+      "insufficientPrivilege": "@:common.errors.insufficientPrivilege",
+      "spaceNotFound": "The space does not exist.",
+      "unableToGetSpace": "Unable to get the space.",
+      "unableToChangeName": "Unable to change the space name.",
+      "unableToChangeMediaRegion": "Unable to change the media region.",
+      "unableToChangeTemplate": "Unable to change the map for the space.",
+      "unableToChangeRole": "Unable to change the role for {fullName}.",
+      "unableToRemoveMember": "Unable to remove {fullName}.",
+      "unableToRemoveInvite": "Unable to remove the unclaimed invite for {inviteeEmail}."
+    }
+  },
+  "emojiPicker": {
+    "loading": "Loading...",
+    "searchPlaceholder": "Search",
+    "emojisNotFound": "Emojis not found."
+  },
+  "resourceDisplay": {
+    "openResourceInNewTab": "Open resource in a new tab",
+    "closeResource": "Close resource"
+  },
+  "devicePermissionModal": {
+    "permissionRequiredTitle": "Permission Required",
+    "permissionRequiredMessage": "We need your permission to access your camera and microphone.  Click on the link below for instructions.",
+    "giveAccessToDevices": "How to give access to devices"
+  },
+  "inviteMembersModal": {
+    "inviteMembers": "Invite Team Members",
+    "inviteeEmails": "Invitee email addresses",
+    "addToSpaces": "Add to the selected spaces below",
+    "sendInvitations": "Send Invitations",
+    "sendInProgress": "Sending...",
+    "inviteeEmailsPlaceholder": "Enter one or more email addresses (separated by commas, semicolons or newlines)",
+    "errors": {
+      "tooManyInvitees": "Please enter no more than {limit} invitee email addresses.",
+      "unableToInitialize": "Unable to initialize the modal.",
+      "unableToInviteUsers": "Unable to send the invitation. | Unable to send the invitations."
+    }
+  },
+  "guestLinkModal": {
+    "guestLink": "Guest Link",
+    "guestLinkForSpace": "Link to access this space",
+    "renewLink": "Renew link",
+    "renewLinkTooltip": "Expire the current guest link and create a new guest link to access this space",
+    "confirmRenewLink": "Are you sure you want to expire the current guest link and create a new guest link to access this space? Note that the current guest link will no longer be usable after a new guest link is created.",
+    "linkRenewed": "The guest link has been renewed.",
+    "copyToClipboard": "Copy to clipboard",
+    "linkCopied": "The guest link has been copied to the clipboard.",
+    "errors": {
+      "unableToInitialize": "Unable to initialize the modal.",
+      "unableToRenewLink": "Unable to renew the guest link.",
+      "unableToCopyLink": "Unable to copy the guest link to the clipboard."
+    }
+  },
+  "roomSettingsModal": {
+    "changeRoomSettings": "@:mapContextMenu.changeRoomSettings",
+    "roomLabel": "Room label",
+    "enableMedia": "Enable media for this room",
+    "guestReceptionArea": "@:common.guestReceptionArea",
+    "useRoomAsGuestReceptionArea": "Use this room (1 seat) as the guest reception area. | Use this room ({count} seats) as the guest reception area.",
+    "presenterMode": "Presenter mode",
+    "roomInPresenterMode": "Space moderators and presenters are allowed to talk.  Regular users and guests must request permission to talk.",
+    "searchPresenterPlaceholder": "Type the name of a presenter to add",
+    "selectedPresenters": "Selected presenters",
+    "roomSettingsUpdated": "The room settings have been updated.",
+    "errors": {
+      "unableToGetMemberProfiles": "Unable to get the space member profiles.",
+      "unableToUpdateRoomSettings": "Unable to update the room settings."
+    }
+  },
+  "idleStatus": {
+    "installChromeExtensionButton": "Install Chrome Extension",
+    "requireChromeExtensionTitle": "Chrome Extension Required",
+    "requireChromeExtensionBody": "You enabled idle detection, but that requires a Chrome extension."
+  },
+  "desktopNotifications": {
+    "enableDesktopNotifications": "Enable desktop notifications",
+    "disableDesktopNotifications": "Disable desktop notifications",
+    "currentlyDisabled": "Desktop notifications are currently disabled.  Click the button below to enable desktop notifications.",
+    "currentlyEnabled": "Desktop notifications are currently enabled.  Click the button below to disable desktop notifications.",
+    "errors": {
+      "unableToEnablePermissionBlocked": "Unable to enable desktop notifications because you have chosen to block notifications.",
+      "unableToEnableNoTokens": "Unable to enable desktop notifications because no tokens were returned.",
+      "unableToDisableDesktopNotifications": "Unable to disable desktop notifications."
+    }
+  },
+  "notificationPreferences": {
+    "notificationType": "Notification type",
+    "showNotification": "Show notification",
+    "playSound": "Play sound",
+    "receiveP2PChat": "Receive a P2P chat message",
+    "receiveRoomChat": "Receive a room chat message",
+    "receiveRoomMessage": "Receive a room message",
+    "receiveSpaceMessage": "Receive a space message",
+    "knockMyRoom": "Users knock on my room",
+    "askedToJoin": "Users ask me to join",
+    "memberEnterSpace": "Members enter the space",
+    "guestEnterSpace": "Guests enter the space"
+  },
+  "receiveP2PChatNotification": {
+    "notificationTitle": "Message from {displayName}"
+  },
+  "receiveRoomChatNotification": {
+    "notificationTitle": "Room chat message from {displayName}"
+  },
+  "receiveRoomMessageNotification": {
+    "notificationTitle": "Room message from {displayName}"
+  },
+  "receiveSpaceMessageNotification": {
+    "notificationTitle": "Space message from {displayName}"
+  },
+  "knockMyRoomNotification": {
+    "notificationTitle": "Knock",
+    "notificationBody": "{displayName} is knocking."
+  },
+  "askedToJoinNotification": {
+    "notificationTitle": "Join",
+    "notificationBody": "Join {displayName} in room."
+  },
+  "memberEnterSpace": {
+    "notificationTitle": "Space enter (member)",
+    "notificationBody": "{displayName} entered the space."
+  },
+  "guestEnterSpace": {
+    "notificationTitle": "Space enter (guest)",
+    "notificationBody": "{displayName} entered the space."
+  },
+  "slackIntegration": {
+    "connectToSlack": "Connect to Slack",
+    "disconnectFromSlack": "Disconnect from Slack",
+    "currentlyNotConnected": "You are currently not connected to Slack.  Click the button below to connect to Slack.",
+    "currentlyConnected": "You are currently connected to Slack.  Click the button below to disconnect from Slack.",
+    "errors": {
+      "unableToDisconnectFromSlack": "Unable to disconnect from Slack."
+    }
+  },
+  "googleCalendarIntegration": {
+    "connectToGoogleCalendar": "Connect to Google Calendar",
+    "disconnectFromGoogleCalendar": "Disconnect from Google Calendar",
+    "currentlyNotConnected": "You are currently not connected to Google Calendar.  Click the button below to connect to Google Calendar.",
+    "currentlyConnected": "You are currently connected to Google Calendar.  Click the button below to disconnect from Google Calendar.",
+    "errors": {
+      "unableToConnectToGoogleCalendar": "Unable to get the URL to connect to Google Calendar.",
+      "unableToDisconnectFromGoogleCalendar": "Unable to disconnect from Google Calendar."
+    }
+  },
+  "userSettingsModal": {
+    "profile": "Profile",
+    "changeUserSettings": "Change User Settings",
+    "userSettingsSaved": "The user settings have been saved.",
+    "media": "Media",
+    "removeBackgroundNoise": "Remove background noise.",
+    "voiceFocusLabel": "Remove background noise and echo from meetings",
+    "videosInsideAvatars": "Videos inside avatars",
+    "cameraBackground": "Blur camera background",
+    "blurCameraBackground": "Background blur",
+    "displayVideosInsideAvatars": "Display videos inside avatars instead of the video bar.",
+    "cameraQuality": "Video quality level",
+    "cameraQualityLow": "Low",
+    "cameraQualityMedium": "Medium",
+    "cameraQualityHigh": "High",
+    "cameraQualityVeryHigh": "Very High",
+    "persistMediaEnterRoom": "Keep microphone and camera state when switching rooms.",
+    "turnMicrophoneOnEnterRoom": "Turn my microphone ON and my camera OFF.",
+    "turnOffMediaEnterRoom": "Turn my microphone and camera OFF.",
+    "roomChange": "When I move to a new room:",
+    "changeEmailTooltip": "Change your email address",
+    "enterNewEmailPlaceholder": "Enter the new email address",
+    "enterNewEmailAgainPlaceholder": "Enter the new email address again",
+    "reloginRequired": "After you click on the Save button below, you will be redirected to the login page to login with your new email address.",
+    "automaticIdleDetection": "Use automatic idle detection.",
+    "idleStateDetected": "Your avatar will display a yellow halo when an idle state is detected. Update my avatar to Idle when no activity for",
+    "chromeExtensionRequired": "Note: This feature is only supported in Chrome browsers and requires the installation of our Google Chrome extension.",
+    "openChromeWebStore": "Click here to install the Idle Detection extension",
+    "forChrome": "for Chrome.",
+    "idleDetection": "Idle Detection",
+    "notifications": "Notifications",
+    "integrations": "Integrations",
+    "slackIntegration": "Slack integration",
+    "googleCalendarIntegration": "Google Calendar integration",
+    "errors": {
+      "unableToInitialize": "Unable to get the data to initialize.",
+      "unableToChangeEmail": "Unable to change the email address.",
+      "unableToSave": "Unable to save the user settings.",
+      "emailAlreadyTaken": "The email address is already taken.  Please use another email address.",
+      "missingNewEmails": "Both email addresses must be specified.",
+      "unmatchedNewEmails": "The first and the second email addresses must be the same.",
+      "invalidNewEmail": "Please enter a valid email address."
+    }
+  },
+  "guestSettingsModal": {
+    "changeGuestSettings": "Change Guest Settings",
+    "guestSettingsSaved": "The guest settings have been saved.",
+    "errors": {
+      "unableToSave": "Unable to save the guest settings."
+    }
+  },
+  "setStatusModal": {
+    "setStatus": "Set Status",
+    "suggestions": "Suggestions (click on one below to select)",
+    "statusMessagePlaceholder": "What's your status?",
+    "clearStatus": "Clear status",
+    "statusUpdated": "The status has been updated.",
+    "statusCleared": "The status has been cleared.",
+    "statusSuggestions": {
+      "busy": "Busy",
+      "away": "Away",
+      "doNotThinkAboutIt": "Don't even think about it",
+      "lunch": "Lunch"
+    },
+    "errors": {
+      "unableToInitialize": "Unable to initialize the modal.",
+      "unableToUpdateStatus": "Unable to update the status.",
+      "unableToClearStatus": "Unable to clear the status."
+    }
+  },
+  "getUserModal": {
+    "joinUser": "Join {displayName}",
+    "joinWithRoomLabel": "Please join me in {roomLabel}.",
+    "joinWithoutRoomLabel": "Please join me in my room.",
+    "join": "Join",
+    "notNow": "Not now",
+    "missedJoinRequest": "You missed a request to join {displayName} at {time}."
+  },
+  "sendMessageModal": {
+    "broadcastSpaceMessage": "Broadcast Space Message",
+    "sendRoomMessage": "Send Room Message",
+    "sendUserMessage": "Send User Message",
+    "message": "Message",
+    "messageToRoomWithRoomLabel": "Message to {roomLabel}",
+    "messageToRoomWithoutRoomLabel": "Message to the room",
+    "messageToUser": "Message to {displayName}",
+    "spaceMessagePlaceholder": "Enter a message to be broadcast to everyone in the space",
+    "roomMessagePlaceholder": "Enter a message to be sent to everyone in the room",
+    "userMessagePlaceholder": "Enter a message to be sent to {displayName}",
+    "broadcastMessage": "Broadcast Message",
+    "sendMessage": "Send Message"
+  },
+  "sendMessageWithThirdPartyModal": {
+    "sendMessage": "Send a message to {displayName}",
+    "messagePlaceholder": "Enter a message",
+    "sendViaWelo": "Send via @:common.appName",
+    "sendViaSlack": "Send via Slack",
+    "errors": {
+      "unableToSendUserNotInSpace": "Cannot send a message now because {displayName} is not currently in the space.",
+      "unableToSendNoSlackInfo": "Unable to get the relevant Slack information to send the message."
+    }
+  },
+  "checkMeetingReadinessModal": {
+    "checkMeetingReadiness": "Check Meeting Readiness",
+    "tcpConnectivity": "TCP connectivity",
+    "udpConnectivity": "UDP connectivity",
+    "checkWillStart": "Check will start shortly.",
+    "checkPending": "Check pending.",
+    "checking": "Checking...",
+    "resultSucceeded": "Successful.",
+    "resultMeetingSessionURLsNotInitialized": "Meeting session URLs are not initialized.",
+    "resultConnectionFailed": "Connection failed.",
+    "resultICENegotiationFailed": "ICE negotiation failed.",
+    "errors": {
+      "unableToCreateChimeMeeting": "Unable to create a Chime meeting.",
+      "unableToInitializeChime": "Unable to initialize Chime."
+    }
+  },
+  "manageResourcesModal": {
+    "manageResources": "Manage Resources",
+    "createResource": "Create resource",
+    "resourceCount": "Resource count: {count}",
+    "noResources": "No resources have been created.  Click on the \"Create resource\" button above to create a resource.",
+    "url": "URL",
+    "spacePermission": "Members of the selected spaces below can access this resource",
+    "confirmRemoveResource": "Are you sure you want to remove \"{title}\"?",
+    "resourceCreated": "The resource has been created.",
+    "resourceUpdated": "The resource has been updated.",
+    "resourceRemoved": "The resource has been removed.",
+    "errors": {
+      "invalidTitle": "The title must be specified and it must not be longer than {maxChars} characters.",
+      "invalidUrl": "The URL must be specified and it must be a valid URL.",
+      "invalidDescription": "The description must not be longer than {maxChars} characters.",
+      "unableToInitialize": "Unable to initialize the modal.",
+      "unableToCreateResource": "Unable to create the resource.",
+      "unableToUpdateResource": "Unable to update the resource.",
+      "unableToRemoveResource": "Unable to remove the resource."
+    }
+  },
+  "assignRoomResourcesModal": {
+    "assignRoomResources": "Assign Room Resources",
+    "displayOption": "Display Option",
+    "order": "Order",
+    "displayOptionEmbedded": "Shown in the @:common.appName space",
+    "displayOptionNewTab": "Shown in a new tab",
+    "resourceCount": "Resource count: {count}",
+    "roomResourcesSaved": "The room resources have been saved.",
+    "noResources": "No resources have been created.  Click on the rocket icon in the lower left and select the \"Manage Resources\" menu item to create resources.",
+    "notAllResourcesCanBeEmbedded": "Not all resources can be shown in the @:common.appName space.  Please try opening the resource from the room after you click on the Save button below.",
+    "errors": {
+      "unableToInitialize": "Unable to initialize the modal.",
+      "unableToSaveRoomResources": "Unable to save the room resources."
+    }
+  },
+  "selectResourceModal": {
+    "selectResource": "Select Resource",
+    "initializing": "Initializing...",
+    "clickToShow": "Click on a resource below to show it",
+    "errors": {
+      "unableToInitialize": "Unable to initialize the modal."
+    }
+  },
+  "mediaPermissionsModal": {
+    "mediaPermissions": "Media Permissions",
+    "requestPermissions": "Request permissions",
+    "requestPermissionsWithButtonMessage": "For others to see and hear you, your browser will request access to your camera and microphone.  Please click on the \"Request permissions\" button below and follow the instructions in the video above.",
+    "requestPermissionsWithoutButtonMessage": "For others to see and hear you, your browser will request access to your camera and microphone.  Please follow the instructions in the video above.",
+    "permissionsDeniedMessage": "You have denied access to your camera and microphone.  Please follow the instructions in the video above to grant access."
+  },
+  "selectMediaDevicesModal": {
+    "selectMediaDevices": "Select Media Devices",
+    "initializingVideo": "Initializing the video...",
+    "testAudioTooltip": "Play a test sound",
+    "enterSpace": "Enter space"
+  },
+  "userMessageToast": {
+    "reply": "Reply",
+    "errors": {
+      "unableToSendReply": "Unable to send a reply",
+      "senderNotInSpace": "The sender of this message is not currently in the space."
+    }
+  },
+  "knockAllowInToast": {
+    "userKnocking": "{displayName} is knocking.",
+    "allowIn": "Allow in"
+  },
+  "requestToTalkToast": {
+    "requestToTalk": "{displayName} is requesting permission to talk."
+  },
+  "installDesktopApp": {
+    "installApp": "Install desktop app",
+    "installAppPrompt": "@:common.appName can be installed as a desktop app and will open in its own window.  Do you want to install the @:common.appName desktop app?"
+  },
+  "updateChecker": {
+    "updateAvailable": "Update available!",
+    "newContentAvailable": "A new version of @:common.appName is available.",
+    "reload": "Reload Now"
+  },
+  "contextMenu": {
+    "knockWithRoomLabel": "Knock on {roomLabel}",
+    "knockWithoutRoomLabel": "@:common.knock"
+  },
+  "mapContextMenu": {
+    "menuHeader": "Room Menu",
+    "seatCount": "(1 seat) | ({count} seats)",
+    "enterRoom": "Enter Room",
+    "sendRoomMessage": "Send Room Message",
+    "lockWithRoomLabel": "Lock {roomLabel}",
+    "lockWithoutRoomLabel": "Lock Room",
+    "unlockWithRoomLabel": "Unlock {roomLabel}",
+    "unlockWithoutRoomLabel": "Unlock Room",
+    "setHomeRoom": "Set Home Room",
+    "unsetHomeRoom": "Unset Home Room",
+    "changeRoomSettings": "Change Room Settings",
+    "assignRoomResources": "Assign Room Resources",
+    "removeRoomLabel": "Remove Room Label",
+    "homeRoomSet": "The home room has been set.",
+    "homeRoomUnset": "The home room has been unset.",
+    "roomLabelRemoved": "The room label has been removed",
+    "confirmRemoveRoomLabel": "Are you sure you want to remove the room label?",
+    "confirmSetHomeRoomWithRoomLabel": "Are you sure you want to set your home room to {roomLabel}?",
+    "confirmSetHomeRoomWithoutRoomLabel": "Are you sure you want to set your home room?",
+    "errors": {
+      "unableToSetHomeRoom": "Unable to set the home room.",
+      "unableToUnsetHomeRoom": "Unable to unset the home room.",
+      "unableToRemoveRoomLabel": "Unable to remove the room label."
+    }
+  },
+  "avatarContextMenu": {
+    "menuHeader": "User Menu",
+    "setStatus": "Set Status",
+    "askToJoin": "Ask {displayName} to Join",
+    "sendMessage": "Send Message",
+    "muteMicrophone": "Mute Microphone",
+    "muteMicrophoneSent": "A mute microphone request has been sent to {displayName}.",
+    "turnOffCamera": "Turn Off Camera",
+    "turnOffCameraSent": "A turn camera off request has been sent to {displayName}.",
+    "revokePermissionToTalk": "Revoke Permission to Talk",
+    "revokePermissionToTalkSent": "A revoke permission to talk request has been sent to {displayName}.",
+    "disconnectUser": "Disconnect {displayName}",
+    "disconnectGuest": "Disconnect Guest",
+    "confirmDisconnectUser": "Are you sure you want to disconnect {displayName}?",
+    "disconnectUserSent": "A disconnect request has been sent to {displayName}.",
+    "errors": {
+      "unableToSendDisconnectUser": "Unable to send a disconnect request to {displayName}.",
+      "unableToSendMuteMicrophone": "Unable to send a mute microphone request to {displayName}.",
+      "unableToSendTurnOffCamera": "Unable to send a turn camera off request to {displayName}.",
+      "unableToSendRevokePermissionToTalk": "Unable to send a revoke permission to talk request to {displayName}."
+    }
+  },
+  "calendar": {
+    "upcomingCalendarEvents": "Upcoming Calendar Events",
+    "localTime": "Local time: {localTime}",
+    "eventAllDayInProgress": "In progress from {startDate} {startTime} to {endDate} {endTime}",
+    "eventAllDayNotInProgress": "{startDate} {startTime} to {endDate} {endTime}",
+    "eventInProgress": "In progress until {endTime}",
+    "eventToday": "Today from {startTime} to {endTime}",
+    "eventNotToday": "{startDate} from {startTime} to {endTime}"
+  },
+  "timeStrings": {
+    "idleFor": "Idle for",
+    "seconds": "seconds",
+    "1minuteAgo": "1 minute",
+    "1minuteFromNow": "1 minute from now",
+    "minute": "minute",
+    "minutes": "minutes",
+    "1hourAgo": "1 hour",
+    "1hourFromNow": "1 hour from now",
+    "hours": "hours",
+    "yesterday": "yesterday",
+    "tomorrow": "tomorrow",
+    "days": "days",
+    "lastWeek": "last week",
+    "nextWeek": "next week",
+    "weeks": "weeks",
+    "lastMonth": "last month",
+    "nextMonth": "next month",
+    "months": "months",
+    "lastYear": "last year",
+    "nextYear": "next year",
+    "years": "years",
+    "justNow": "just now",
+    "ago": "ago",
+    "fromNow": "from now"
+  }
+}

@@ -1,0 +1,958 @@
+{
+	"common": {
+		"appName": "BIENVENUE",
+		"email": "E-mail",
+		"fullName": "Nom et prénom",
+		"displayName": "Afficher un nom",
+		"spaceName": "Nom de l'espace",
+		"optionalAvatar": "Avatar (facultatif)",
+		"and": "et",
+		"guest": "Invité",
+		"yes": "Oui",
+		"no": "Non",
+		"ok": "d'accord",
+		"on": "Au",
+		"off": "Désactivé",
+		"save": "Sauvegarder",
+		"close": "Fermer",
+		"create": "Créer",
+		"edit": "Éditer",
+		"delete": "Effacer",
+		"knock": "Frappe",
+		"allow": "Permettre",
+		"reconnect": "Reconnecter",
+		"icon": "Icône",
+		"title": "Titre",
+		"createdOn": "Créé sur",
+		"actions": "Actions",
+		"description": "La description",
+		"openResources": "Ressources ouvertes",
+		"requestToTalk": "Demande de conversation",
+		"connectionIssues": "Problèmes de connexion?",
+		"headphonesOn": "Allumez les haut-parleurs",
+		"headphonesOff": "Éteignez les haut-parleurs",
+		"muteMicrophone": "Couper le microphone",
+		"unmuteMicrophone": "Activer le microphone",
+		"startCamera": "Démarrer la caméra",
+		"stopCamera": "Arrêter la caméra",
+		"startScreenshare": "Partagez votre écran",
+		"stopScreenshare": "Arrêtez de partager votre écran",
+		"showSpace": "Revenir à la vue de l'espace",
+		"microphones": "Microphones",
+		"speakers": "Haut-parleurs",
+		"cameras": "Appareils photo",
+		"supportChat": "Chat d'assistance",
+		"removeBackgroundNoise": "Supprimer le bruit de fond",
+		"blurCameraBackground": "Arrière-plan flou de la caméra",
+		"connectionDidBecomePoor": "Votre connexion est mauvaise.",
+		"connectionDidSuggestStopVideo": "Votre connexion est mauvaise. Nous vous recommandons de désactiver votre vidéo.",
+		"test": "Test",
+		"connectionOffline": "Votre connexion Internet semble être hors ligne.",
+		"cancel": "Annuler",
+		"continue": "Continuer",
+		"remove": "Supprimer",
+		"logout": "Se déconnecter",
+		"loading": "Chargement...",
+		"processing": "Traitement...",
+		"successful": "À succès",
+		"unsuccessful": "Infructueux",
+		"selectMap": "Sélectionnez une carte pour l'espace:",
+		"signInLinkSent": "A sign in email with additional instructions was sent to <b>{email}</b>.  Please click on the sign in link in the email to continue.",
+		"confirmEmail": "Veuillez entrer votre email pour confirmation",
+		"lockedRoomWithRoomLabel": "{roomLabel} a été verrouillé.",
+		"lockedRoomWithoutRoomLabel": "La salle a été fermée à clé.",
+		"unlockedRoomWithRoomLabel": "{roomLabel} a été déverrouillé.",
+		"unlockedRoomWithoutRoomLabel": "La salle a été déverrouillée.",
+		"guestReceptionArea": "Zone de réception des clients",
+		"broadcastMessageSent": "Le message a été diffusé dans l'espace.",
+		"roomMessageSentWithRoomLabel": "Le message de la salle a été envoyé à {roomLabel}.",
+		"roomMessageSentWithoutRoomLabel": "Le message de la salle a été envoyé.",
+		"userMessageSent": "Le message a été envoyé à {displayName}.",
+		"getUserSent": "Une demande d'obtention a été envoyée à {displayName}.",
+		"confirmDeleteOnlySpace": "\"{spaceName}\" est le seul espace de l'organisation. Es-tu sûr de vouloir le supprimer?",
+		"confirmDeleteSpaceTitle": "Supprimer {spaceName}",
+		"confirmDeleteSpace": "La suppression de l'espace \"{spaceName}\" supprimera définitivement l'espace.",
+		"confirmDeleteSpacePrompt": "Confirmez la suppression en saisissant le nom de l'espace \"{spaceName}\" ci-dessous:",
+		"confirmDeleteSpaceInputPlaceholder": "Saisissez le nom de l'espace pour confirmer la suppression",
+		"finalConfirmDeleteSpace": "Voulez-vous vraiment supprimer \"{spaceName}\"?",
+		"spaceDeleted": "L'espace \"{spaceName}\" a été supprimé.",
+		"networkIssues": "Problèmes de réseau",
+		"termsOfService": "Conditions d'utilisation",
+		"privacyPolicy": "Politique de confidentialité",
+		"roles": {
+			"administrator": "Administrateur",
+			"moderator": "Modérateur",
+			"member": "Membre"
+		},
+		"errors": {
+			"nobodyInRoom": "Personne n'est dans la salle.",
+			"onlyOneInRoom": "Vous êtes le seul dans la salle.",
+			"messageTooLong": "Le message est trop long.",
+			"insufficientPrivilege": "Privilège insuffisant.",
+			"invalidFileType": "Veuillez sélectionner un fichier image pour l'avatar.",
+			"spaceNameRequired": "Veuillez saisir un nom pour l'espace.",
+			"permissionDenied": "Nous ne pouvons pas accéder à votre caméra.",
+			"signInLinkExpiredNewLinkRequested": "Le lien de connexion a expiré ou a déjà été utilisé. Nous avons envoyé un nouveau lien de connexion à votre adresse e-mail",
+			"loginRejectedEmailNotFound": "Impossible de vous connecter car vous ne vous êtes pas inscrit.",
+			"unableToSendSignInLink": "Impossible d'envoyer le lien de connexion à l'adresse e-mail spécifiée.",
+			"unableToSignInEmailLink": "Impossible de se connecter avec le lien e-mail. Veuillez vous assurer que l'adresse e-mail saisie est la même que l'adresse e-mail de connexion.",
+			"unableToLockRoom": "Impossible de verrouiller la pièce.",
+			"unableToUnlockRoom": "Impossible de déverrouiller la salle.",
+			"unableToSendSpaceActionMessage": "Impossible de diffuser le message dans l'espace.",
+			"unableToSendUserMessage": "Impossible d'envoyer le message à {displayName}.",
+			"unableToSendRoomMessageWithRoomLabel": "Impossible d'envoyer le message de la salle à {roomLabel}.",
+			"unableToSendRoomMessageWithoutRoomLabel": "Impossible d'envoyer le message de la salle.",
+			"unableToSendGetUser": "Impossible d'envoyer une demande d'obtention à {displayName}.",
+			"confirmDeleteSpaceInvalidConfirmMessage": "Veuillez saisir le nom d'espace \"{spaceName}\" pour confirmer.",
+			"unableToDeleteSpace": "Impossible de supprimer l'espace \"{spaceName}\".",
+			"unableToConnect": "Problèmes de réseau rencontrés. Veuillez cliquer sur le bouton ci-dessous pour vous reconnecter."
+		}
+	},
+	"admin": {
+		"spaceTemplateName": "Nom du modèle",
+		"spaceTemplateType": "Type de carte",
+		"spaceTemplateDescription": "Description du modèle",
+		"spaceTemplateBackgroundColor": "Couleur d'arrière-plan #HEX",
+		"spaceTemplateSouthWestBound": "SouthWestBound LatLng",
+		"spaceTemplateNorthEastBound": "NorthEastBound LatLng",
+		"spaceTemplateRoomSettings": "Paramètres de la pièce",
+		"spaceTemplateGuestReceptionArea": "@: common.guestReceptionArea?",
+		"spaceTemplateUseRoomAsGuestReceptionArea": "Utilisez cette salle comme zone de réception des clients.",
+		"spaceTemplateSaved": "Les paramètres du modèle d'espace ont bien été enregistrés.",
+		"spaceTemplateAvatarScale": "Facteur d'échelle d'avatar",
+		"spaceTemplateMaxZoom": "Niveau de zoom max",
+		"spaceTemplateInitialZoom": "Niveau de zoom initial",
+		"spaceTemplateScaleMaxLevel": "Échelle de l'avatar pour un niveau de zoom maximal",
+		"spaceTemplatePublic": "Carte publique",
+		"searchInputPlaceholder": "Tapez pour rechercher par rapport aux espaces {spaceCount}",
+		"createSpaceTemplate": "Créer un nouveau modèle d'espace",
+		"show": "Spectacle",
+		"hide": "Cacher",
+		"details": "Des détails",
+		"spaceId": "ID d'espace",
+		"hideDetails": "Cacher les détails",
+		"showDetails": "Afficher les détails",
+		"spaceName": "Nom de l'espace",
+		"createdAt": "Créé",
+		"organizationName": "nom de l'organisation",
+		"totalUserCount": "Nombre total d'utilisateurs",
+		"unclaimedInvites": "Invitations non réclamées",
+		"unclaimedInviteTooltip": "L'invitation a été envoyée le {dateTime}",
+		"lastSpaceEnteredAt": "Dernière entrée dans cet espace",
+		"organizationRole": "Rôle de l'organisation",
+		"spaceRole": "Rôle spatial",
+		"remove": "Supprimer",
+		"clear": "Dégager",
+		"editRooms": "Modifier les pièces",
+		"filter": "Filtre",
+		"exportAllUsers": "Exporter tous les utilisateurs",
+		"roleChanged": "Le rôle de {fullName} a été modifié.",
+		"memberRemoved": "{fullName} a été supprimé.",
+		"confirmRemove": "Voulez-vous vraiment supprimer {fullName} ({email}) de l'espace?",
+		"errors": {
+			"insufficientPrivilege": "@: common.errors.insufficientPrivilege",
+			"unableToChangeRole": "Impossible de modifier le rôle de {fullName}.",
+			"unableToRemoveMember": "Impossible de supprimer {fullName}.",
+			"unableToExportAllUsers": "Impossible d'exporter les données utilisateur."
+		}
+	},
+	"navigationBar": {
+		"findUsers": "Trouver des utilisateurs",
+		"findUsersTooltip": "Rechercher dans la liste des utilisateurs",
+		"inviteMembers": "Inviter des membres",
+		"guestLink": "Lien invité",
+		"logout": "Se déconnecter",
+		"help": "Aider",
+		"userGuide": "Mode d'emploi",
+		"newFeatures": "Nouvelles fonctionnalités",
+		"submitFeedback": "Soumettre des commentaires",
+		"settings": "Paramètres",
+		"mySettings": "Mes paramètres",
+		"organizationSettings": "Paramètres de l'organisation",
+		"spaceSettings": "Paramètres de l'espace",
+		"superAdminSettings": "Super administrateur",
+		"superAdminSpacePresence": "Présence spatiale",
+		"superAdminSpaceTemplates": "Modèles d'espace",
+		"superAdminEmailEvents": "@: emailEventAdminView.emailEvents",
+		"homeRoom": "Chambre à la maison",
+		"goHomeTooltip": "Allez dans votre pièce à la maison",
+		"alreadyInHomeRoom": "Vous êtes déjà dans votre pièce à la maison.",
+		"setHomeRoomInstructions": "Vous ne disposez actuellement pas d'un ensemble de pièces pour la maison. Pour définir une pièce d'origine, cliquez avec le bouton droit de la souris sur une pièce et sélectionnez l'élément de menu «Définir la pièce d'origine»."
+	},
+	"rosterSidebar": {
+		"spaceRoster": "Liste de l'espace",
+		"searchUserPlaceholder": "Entrez le nom d'un utilisateur",
+		"clearSearchTooltip": "Effacer les résultats de la recherche",
+		"clearSearchResults": "Effacer 1 résultat de recherche | Effacer {count} résultats de recherche",
+		"noSearchResults": "Aucun utilisateur trouvé.",
+		"usersInSameRoom": "Utilisateurs de votre salle ({userCount})",
+		"onlyOneInRoom": "@: common.errors.onlyOneInRoom",
+		"usersInOtherRooms": "Utilisateurs des autres salles ({userCount})",
+		"noOneInOtherRooms": "Personne d'autre n'est dans les autres pièces.",
+		"usersOffline": "Utilisateurs hors ligne ({userCount})",
+		"noOneOffline": "Personne n'est hors ligne.",
+		"slackUsers": "Utilisateurs dans Slack ({userCount})",
+		"noSlackUsers": "Aucun utilisateur Slack."
+	},
+	"rosterSection": {
+		"clickSectionTooltip": "Cliquez pour agrandir / réduire",
+		"locateUser": "Localiser l'utilisateur",
+		"askToJoin": "Demander à rejoindre",
+		"sendMessage": "Envoyer le message",
+		"slackAskToJoinMessage": "<@ {slackUserId}> vous invite à une réunion dans WELO. <{joinUrl} | Veuillez cliquer ici pour vous inscrire.>",
+		"errors": {
+			"unableToAskNoSlackInfo": "Impossible d'obtenir les informations Slack pertinentes pour demander à l'utilisateur de se joindre.",
+			"userInRoom": "{displayName} est déjà dans la salle."
+		}
+	},
+	"videoBarHeader": {
+		"videoSettings": "Paramètres vidéo",
+		"videoSettingsTooltip": "Modifier les paramètres vidéo",
+		"showVideosInsideAvatars": "Afficher les vidéos à l'intérieur des avatars",
+		"hideVideosInsideAvatars": "Masquer les vidéos à l'intérieur des avatars",
+		"showLocalVideo": "Afficher ma vidéo",
+		"hideLocalVideo": "Masquer ma vidéo",
+		"showRemoteVideos": "Afficher toutes les vidéos entrantes",
+		"hideRemoteVideos": "Masquer toutes les vidéos entrantes",
+		"showActiveSpeaker": "Afficher le haut-parleur actif uniquement (bêta)",
+		"exitActiveSpeaker": "Quitter le mode haut-parleur actif (bêta)",
+		"showVideoGallery": "Afficher la galerie vidéo",
+		"hideVideoGallery": "Masquer la galerie vidéo"
+	},
+	"media": {
+		"microphoneMuted": "{displayName} a désactivé votre microphone.",
+		"cameraTurnedOff": "{displayName} a éteint votre caméra.",
+		"inputSelected": "Microphone sélectionné: {inputSelected}",
+		"outputDeviceNotAvailable": "Nous n'avons pas trouvé de périphérique de sortie pour lire l'audio.",
+		"revokedPermissionToTalk": "{displayName} a révoqué votre autorisation de parler.",
+		"microphoneTurnedOff": "Microphone coupé. Le microphone sélectionné n'est plus disponible.",
+		"videoTurnedOff": "L'appareil photo est éteint. Votre appareil photo sélectionné n'est plus disponible.",
+		"mediaAutoTurnedOff": "Votre média est désactivé car vous êtes le seul dans la salle.",
+		"unableToConnectToMediaServer": "Impossible de se connecter au serveur multimédia. Veuillez actualiser la page et réessayer."
+	},
+	"videoClipFavoritesModal": {
+		"searchVideoClips": "Rechercher des clips vidéo ...",
+		"searchInputPlaceholder": "Tapez le mot-clé",
+		"playInRoom": "Jouez dans la chambre",
+		"sec": "1 SEC | {count} SECS",
+		"videoClipModalTitle": "Gérer les favoris et sélectionner un clip",
+		"videoClipModalText": "Ajoutez et gérez les favoris pour lire un clip pendant une réunion. Cliquez sur votre clip préféré pour le partager avec les autres participants à la réunion.",
+		"addToFavorites": "Ajouter aux Favoris",
+		"removeFromFavorites": "Retirer des favoris"
+	},
+	"mediaControls": {
+		"requestToTalkTooltip": "Cette salle est en mode présentateur et nécessite qu'un présentateur vous autorise à parler",
+		"mediaDisabled": "Les médias sont désactivés pour cette salle.",
+		"microphoneSettings": "Microphone",
+		"cameraSettings": "Caméra",
+		"headphoneSettings": "Orateur"
+	},
+	"getStartedView": {
+		"createNewTitle": "Essayez @: common.appName avec votre équipe, gratuitement.",
+		"createNewText": "Créez un tout nouvel espace de travail pour vous et votre équipe.",
+		"createNewWorkspace": "Créer un espace de travail",
+		"existingUser": "Déjà un utilisateur @: common.appName?",
+		"loginNow": "Connecte-toi maintenant",
+		"joinExistingText": "Vous souhaitez rejoindre l'espace de travail existant de votre équipe mais vous n'avez pas encore de compte utilisateur? Demandez une invitation à l'administrateur @: common.appName de votre équipe."
+	},
+	"createAccountView": {
+		"enterEmail": "Tout d'abord, entrez votre email",
+		"useWorkEmail": "Nous vous suggérons d'utiliser l'adresse e-mail que vous utilisez au travail.",
+		"emailPlaceholder": "nom@work-email.com",
+		"consentTextPrefix": "En continuant, vous acceptez notre"
+	},
+	"setupOrganizationView": {
+		"workTogether": "@: common.appName donne à votre équipe un endroit pour parler et travailler ensemble",
+		"organizationName": "Quel est le nom de votre organisation?",
+		"templateInfo": "Nombre de salles / sièges: {roomCount} / {seatCount}",
+		"errors": {
+			"notFromEmailLink": "Impossible de continuer car l'URL ne contient pas certaines informations requises.",
+			"unableToGetSpaceTemplates": "Impossible d'obtenir les modèles d'espace.",
+			"unableToCreateUser": "Impossible de créer l'utilisateur.",
+			"unableToCreateOrganization": "Impossible de créer l'organisation.",
+			"unableToCreateSpace": "Impossible de créer l'espace."
+		}
+	},
+	"claimInviteView": {
+		"guest": "un invité",
+		"claimInvite": "Demander une invitation",
+		"goToLogin": "Cliquez ici pour accéder à la page de connexion.",
+		"claimInProgress": "Configuration de votre nouvel environnement ...",
+		"differentEmailsPrompt": "You are signed in as <b>{signedInEmail}</b> but the invite is for <b>{inviteeEmail}</b>. Do you want to sign out now and claim the invite using <b>{inviteeEmail}</b>?",
+		"errors": {
+			"inviteNotFound": "L'invitation est introuvable.",
+			"inviteAlreadyClaimed": "L'invitation a déjà été réclamée.",
+			"invitedToSpacesNotFound": "Le ou les espaces sont introuvables.",
+			"unableToClaimInvite": "Impossible de réclamer l'invitation."
+		}
+	},
+	"guestAccessView": {
+		"userAlreadyLoggedInEnter": "Entrer dans l'espace ...",
+		"guestAccess": "Accès invité",
+		"errors": {
+			"unableToLogin": "Impossible de se connecter en tant qu'invité.",
+			"unableToAccess": "Impossible d'accéder à l'espace.",
+			"unableToSetCustomClaims": "Impossible de configurer la sécurité."
+		}
+	},
+	"guestAccessErrorView": {
+		"errors": {
+			"invalidGuestAccessId": "L'ID d'accès invité n'est pas valide.",
+			"guestAccessExpired": "L'accès invité a expiré. Veuillez demander à la personne qui vous a donné le lien d'invité pour un nouveau lien."
+		}
+	},
+	"allowSafariView": {
+		"useOtherBrowsers": "Le navigateur Safari n'offre pas une excellente expérience audio / vidéo. Nous vous recommandons d'utiliser Chrome, Firefox ou Edge.",
+		"clickToUseSafari": "Cliquez ici pour utiliser Safari de toute façon"
+	},
+	"internetExplorerNotSupportedView": {
+		"notSupported": "@: common.appName ne peut pas être exécuté sur Internet Explorer. Veuillez utiliser Chrome, Firefox ou Edge à la place."
+	},
+	"operaNotSupportedView": {
+		"notSupported": "@: common.appName ne peut pas être exécuté sur Opera. Veuillez utiliser Chrome, Firefox ou Edge à la place."
+	},
+	"chromeiOSNotSupportedView": {
+		"notSupported": "@: common.appName ne peut pas être exécuté sur Chrome / iOS. Veuillez utiliser le navigateur Safari à la place."
+	},
+	"oldSessionDisconnectView": {
+		"disconnected": "Vous avez été déconnecté de l'espace car vous avez entré un espace à partir d'un autre onglet du navigateur.",
+		"reconnectToSpace": "Reconnectez-vous à l'espace"
+	},
+	"forcedDisconnectView": {
+		"disconnected": "Vous avez été déconnecté de l'espace par un autre utilisateur."
+	},
+	"spaceDeletedView": {
+		"spaceDeleted": "L'espace dans lequel vous vous trouviez vient d'être supprimé par un administrateur.",
+		"notMemberOfOtherSpaces": "Vous n'êtes membre d'aucun autre espace. Veuillez demander à votre administrateur de vous inviter à d'autres espaces.",
+		"memberOfOtherSpaces": "Vous êtes membre d'au moins un autre espace. Veuillez cliquer sur le bouton ci-dessous pour accéder à un autre espace.",
+		"goToAnotherSpace": "Aller dans un autre espace"
+	},
+	"checkMeetingReadinessView": {
+		"checkMeetingReadiness": "Vérifiez l'état de préparation des réunions.",
+		"refreshToCheckAgain": "Actualisez la page pour réexécuter la vérification."
+	},
+	"unauthorizedView": {
+		"unauthorizedToAccess": "Vous n'êtes pas autorisé à accéder à cette page."
+	},
+	"loginView": {
+		"login": "Connexion",
+		"success": "Connexion réussie!",
+		"switchApplication": "Vous pouvez revenir à votre autre application @: common.appName.",
+		"instructions": "Nous vous enverrons par e-mail un lien magique pour une connexion sans mot de passe.",
+		"signInProcesssing": "Nous vous connectons ...",
+		"loginInProgress": "Se connecter..."
+	},
+	"selectSpaceView": {
+		"clickToEnter": "Cliquez sur un espace ci-dessous pour entrer",
+		"memberCount": "Nombre de membres: {memberCount}",
+		"errors": {
+			"unableToGetSpaces": "Impossible d'obtenir les espaces.",
+			"noSpaces": "Aucun espace trouvé."
+		}
+	},
+	"spaceView": {
+		"errors": {
+			"invalidSpace": "L'espace dans lequel vous essayez d'entrer n'existe pas.",
+			"unableToEnterSpace": "Impossible d'entrer dans l'espace.",
+			"invalidSpaceOrInsufficientPrivilege": "Vous n'êtes pas autorisé à entrer dans l'espace ou l'espace n'existe pas. Veuillez contacter un membre de l'espace pour obtenir une invitation ou demander un accès invité."
+		}
+	},
+	"mapView": {
+		"enterSpace": "Double-cliquez sur une pièce pour entrer dans l'espace.",
+		"enterRoom": "Double-cliquez sur une pièce pour entrer.",
+		"knockRoomReqSent": "Une demande de frappe a été envoyée.",
+		"requestToTalkSent": "Une demande de demande de conversation a été envoyée.",
+		"roomIsLocked": "La pièce est verrouillée",
+		"roomLabelToolTip": "Basculer les libellés des pièces",
+		"errors": {
+			"unableToRequestToJoinAnotherRoom": "Vous ne pouvez inviter l'utilisateur que dans votre propre salle.",
+			"unableToGetFullRoom": "Impossible d'obtenir {displayName} car la salle est pleine.",
+			"unableToEnterFullRoom": "Impossible d'entrer dans la pièce car la pièce est pleine.",
+			"unableToEnterLockedRoom": "Impossible d'entrer dans la pièce car la pièce est verrouillée.",
+			"unableToSendKnockRoomReq": "Impossible d'envoyer une demande de frappe.",
+			"unableToSendKnockRoomRsp": "Impossible d'envoyer une réponse de frappe.",
+			"unableToKnockFullRoom": "La salle est pleine.",
+			"unableToSendRequestToTalk": "Impossible d'envoyer une demande de conversation.",
+			"unableToSendRequestToTalkRsp": "Impossible d'envoyer une demande de réponse vocale."
+		}
+	},
+	"oauthRedirectView": {
+		"integratedWithApplication": "Intégration réussie avec {applicationName}.",
+		"errors": {
+			"unableToIntegrateWithApplication": "Impossible d'intégrer {applicationName}.",
+			"unableToIntegrateWithApplicationNoCode": "Impossible d'intégrer {applicationName} car le code est manquant.",
+			"unableToIntegrateWithApplicationUnexpectedState": "Impossible d'intégrer {applicationName} car l'état est inattendu.",
+			"unableToIntegrateWithApplicationUnexpectedApplication": "Impossible d'intégrer {applicationName} car l'application est inattendue."
+		}
+	},
+	"emailEventAdminView": {
+		"emailEvents": "Evénements par e-mail",
+		"period": "Période: du {startPeriod} au {endPeriod} (derniers {numberOfDays} jours)",
+		"numberOfEmailEvents": "Nombre d'événements par e-mail: {eventCount}",
+		"numberOfFailures": "Nombre d'échecs: {failureCount} ({failureRate}% de taux d'échec)",
+		"filterPlaceholder": "Entrez un e-mail de destinataire, un type d'e-mail ou un type d'événement à filtrer",
+		"noMatchesFound": "Aucun résultat.",
+		"eventDateHeader": "Date de l'événement",
+		"recipientHeader": "Destinataire",
+		"emailTypeHeader": "Type d'e-mail",
+		"eventTypeHeader": "Type d'événement",
+		"eventIdHeader": "ID d'événement",
+		"eventIdCopied": "L'ID d'événement a été copié dans le presse-papiers.",
+		"errors": {
+			"unableToGetEmailEvents": "Impossible d'obtenir les événements par e-mail."
+		}
+	},
+	"avatarImagePicker": {
+		"addImagePlaceholder": "Cliquez ici pour ajouter",
+		"selectFile": "Choisir le dossier",
+		"takeWebcam": "Prendre de la webcam",
+		"takePhoto": "Prendre une photo",
+		"rotateAvatarTooltip": "Faites pivoter l'avatar de 90 degrés"
+	},
+	"spaceTemplatePicker": {
+		"templateInfo": "Nombre de salles / sièges: {roomCount} / {seatCount}",
+		"confirmNewMap": "Voulez-vous vraiment modifier la carte de l'espace?",
+		"errors": {
+			"unableToGetSpaceTemplates": "Impossible d'obtenir les modèles d'espace."
+		}
+	},
+	"quickActionDropup": {
+		"dropupTooltip": "Actions rapides",
+		"broadcastToSpace": "Diffusion dans l'espace",
+		"askEveryoneToJoin": "Demandez à tout le monde de se joindre",
+		"shareVideoClip": "Partager un clip vidéo",
+		"manageResources": "Gérer les ressources",
+		"getAllUsersSent": "Une demande d'obtention de tous les utilisateurs a été envoyée.",
+		"errors": {
+			"unableToSendGetAllUsers": "Impossible d'envoyer une demande d'obtention de tous les utilisateurs."
+		}
+	},
+	"roomChat": {
+		"titleWithRoomLabel": "Chatter dans {roomLabel}",
+		"titleWithoutRoomLabel": "Discuter dans la salle",
+		"inputPlaceholder": "Écrivez à la salle.",
+		"initializing": "Initialisation de la discussion en salle",
+		"errors": {
+			"tryAgain": "Impossible d'envoyer le message de discussion car la discussion de salle est en cours d'initialisation. Veuillez réessayer d'envoyer le message de discussion dans quelques secondes.",
+			"unableToSendChatMessage": "Impossible d'envoyer le message de discussion."
+		}
+	},
+	"organizationSettings": {
+		"organizationSettingsHeader": "Paramètres de l'organisation",
+		"membersIn": "Membres en",
+		"membersInOrganization": "@: organizationSettings.membersIn {organizationName}",
+		"editOrganizationName": "Modifier le nom",
+		"organizationName": "Nom de l'organisation",
+		"fullNameHeader": "@: common.fullName",
+		"emailHeader": "@: common.email",
+		"roleHeader": "Rôle de l'organisation",
+		"removeHeader": "@: common.remove",
+		"organizationNameChanged": "Le nom de l'organisation a été modifié.",
+		"roleChanged": "Le rôle de {fullName} a été modifié.",
+		"memberRemoved": "{fullName} a été supprimé.",
+		"confirmRemove": "Voulez-vous vraiment supprimer {fullName} ({email}) de l'organisation?",
+		"errors": {
+			"insufficientPrivilege": "@: common.errors.insufficientPrivilege",
+			"noOrganizations": "Aucune organisation trouvée.",
+			"unableToGetOrganizations": "Impossible d'obtenir les organisations.",
+			"unableToGetMembers": "Impossible d'obtenir les membres de l'organisation.",
+			"unableToChangeOrganizationName": "Impossible de modifier le nom de l'organisation.",
+			"unableToChangeRole": "Impossible de modifier le rôle de {fullName}.",
+			"unableToRemoveMember": "Impossible de supprimer {fullName}."
+		}
+	},
+	"spaceSettings": {
+		"spaceSettingsHeader": "Paramètres de l'espace",
+		"spacesIn": "Espaces dans",
+		"spacesInOrganization": "@: spaceSettings.spacesIn {nom_organisation}",
+		"createSpace": "Créer de l'espace",
+		"map": "Carte",
+		"memberCount": "Nombre de membres",
+		"allOrganizations": "Toutes les organisations",
+		"errors": {
+			"noSpaces": "Aucun espace trouvé.",
+			"unableToGetSpaces": "Impossible d'obtenir les espaces."
+		}
+	},
+	"createSpace": {
+		"newSpace": "Nouvel espace",
+		"errors": {
+			"noOrganizations": "Impossible de créer l'espace car aucune organisation n'a été sélectionnée.",
+			"noSpaceTemplates": "Impossible de créer l'espace car aucun modèle d'espace n'a été sélectionné.",
+			"unableToCreateSpace": "Impossible de créer l'espace."
+		}
+	},
+	"editSpace": {
+		"editSpaceHeader": "Modifier les paramètres",
+		"editSpaceWithNameHeader": "Modifier les paramètres de {spaceName}",
+		"mediaRegion": "Région des médias",
+		"membersInSpace": "Membres dans {spaceName} ({memberCount})",
+		"unclaimedInvitesForSpace": "Invitations non réclamées pour {spaceName} ({unclaimedInviteCount})",
+		"fullNameHeader": "@: common.fullName",
+		"emailHeader": "@: common.email",
+		"roleHeader": "Rôle spatial",
+		"removeHeader": "@: common.remove",
+		"inviteeEmailHeader": "E-mail de l'invité",
+		"sentOnHeader": "Envoyé sur",
+		"spaceNameChanged": "Le nom de l'espace a été modifié.",
+		"mediaRegionChanged": "La région des médias a été modifiée.",
+		"spaceTemplateChanged": "La carte a été modifiée.",
+		"roleChanged": "Le rôle de {fullName} a été modifié.",
+		"memberRemoved": "{fullName} a été supprimé.",
+		"unclaimedInviteRemoved": "L'invitation non réclamée pour {inviteeEmail} a été supprimée.",
+		"unnamedSpace": "Espace sans nom",
+		"confirmRemoveMember": "Voulez-vous vraiment supprimer {fullName} ({email}) de l'espace?",
+		"confirmRemoveUnclaimedInvite": "Voulez-vous vraiment supprimer l'invitation non réclamée pour {inviteeEmail}?",
+		"editAnotherSpace": "Modifier un autre espace",
+		"mediaRegions": {
+			"usEast1": "USA Est (Virginie du Nord)",
+			"usEast2": "USA Est (Ohio)",
+			"usWest1": "USA Ouest (Californie du Nord)",
+			"usWest2": "USA Ouest (Oregon)",
+			"afSouth1": "Afrique (Cape Town)",
+			"apSouth1": "Asie-Pacifique (Mumbai)",
+			"apNortheast2": "Asie-Pacifique (Séoul)",
+			"apSoutheast1": "Asie-Pacifique (Singapour)",
+			"apSoutheast2": "Asie-Pacifique (Sydney)",
+			"apNortheast1": "Asie-Pacifique (Tokyo)",
+			"caCentral1": "Canada (Centre)",
+			"euCentral1": "Europe (Francfort)",
+			"euWest1": "Europe (Irlande)",
+			"euWest2": "Europe (Londres)",
+			"euSouth1": "Europe (Milan)",
+			"euWest3": "Europe (Paris)",
+			"euNorth1": "Europe (Stockholm)",
+			"saEast1": "Amérique du Sud (São Paulo)"
+		},
+		"errors": {
+			"insufficientPrivilege": "@: common.errors.insufficientPrivilege",
+			"spaceNotFound": "L'espace n'existe pas.",
+			"unableToGetSpace": "Impossible d'obtenir l'espace.",
+			"unableToChangeName": "Impossible de modifier le nom de l'espace.",
+			"unableToChangeMediaRegion": "Impossible de changer la région du média.",
+			"unableToChangeTemplate": "Impossible de modifier la carte de l'espace.",
+			"unableToChangeRole": "Impossible de modifier le rôle de {fullName}.",
+			"unableToRemoveMember": "Impossible de supprimer {fullName}.",
+			"unableToRemoveInvite": "Impossible de supprimer l'invitation non réclamée pour {inviteeEmail}."
+		}
+	},
+	"emojiPicker": {
+		"loading": "Chargement...",
+		"searchPlaceholder": "Rechercher",
+		"emojisNotFound": "Emojis introuvables."
+	},
+	"resourceDisplay": {
+		"openResourceInNewTab": "Ouvrir la ressource dans un nouvel onglet",
+		"closeResource": "Fermer la ressource"
+	},
+	"devicePermissionModal": {
+		"permissionRequiredTitle": "Autorisation requise",
+		"permissionRequiredMessage": "Nous avons besoin de votre autorisation pour accéder à votre caméra et à votre microphone. Cliquez sur le lien ci-dessous pour obtenir des instructions.",
+		"giveAccessToDevices": "Comment donner accès aux appareils"
+	},
+	"inviteMembersModal": {
+		"inviteMembers": "Inviter des membres de l'équipe",
+		"inviteeEmails": "Adresses e-mail des invités",
+		"addToSpaces": "Ajouter aux espaces sélectionnés ci-dessous",
+		"sendInvitations": "Envoyer des invitations",
+		"sendInProgress": "Envoi en cours...",
+		"inviteeEmailsPlaceholder": "Saisissez une ou plusieurs adresses e-mail (séparées par des virgules, des points-virgules ou des retours à la ligne)",
+		"errors": {
+			"tooManyInvitees": "Veuillez ne pas saisir plus de {limite} adresses e-mail d'invités.",
+			"unableToInitialize": "Impossible d'initialiser le modal.",
+			"unableToInviteUsers": "Impossible d'envoyer l'invitation. | Impossible d'envoyer les invitations."
+		}
+	},
+	"guestLinkModal": {
+		"guestLink": "Lien invité",
+		"guestLinkForSpace": "Lien pour accéder à cet espace",
+		"renewLink": "Renouveler le lien",
+		"renewLinkTooltip": "Expirez le lien invité actuel et créez un nouveau lien invité pour accéder à cet espace",
+		"confirmRenewLink": "Voulez-vous vraiment faire expirer le lien invité actuel et créer un nouveau lien invité pour accéder à cet espace? Notez que le lien invité actuel ne sera plus utilisable après la création d'un nouveau lien invité.",
+		"linkRenewed": "Le lien invité a été renouvelé.",
+		"copyToClipboard": "Copier dans le presse-papier",
+		"linkCopied": "Le lien invité a été copié dans le presse-papiers.",
+		"errors": {
+			"unableToInitialize": "Impossible d'initialiser le modal.",
+			"unableToRenewLink": "Impossible de renouveler le lien invité.",
+			"unableToCopyLink": "Impossible de copier le lien d'invité dans le presse-papiers."
+		}
+	},
+	"roomSettingsModal": {
+		"changeRoomSettings": "@: mapContextMenu.changeRoomSettings",
+		"roomLabel": "Étiquette de la chambre",
+		"enableMedia": "Activer les médias pour cette salle",
+		"guestReceptionArea": "@: common.guestReceptionArea",
+		"useRoomAsGuestReceptionArea": "Utilisez cette salle (1 place) comme zone de réception des invités. | Utilisez cette salle ({count} places) comme zone de réception des invités.",
+		"presenterMode": "Mode présentateur",
+		"roomInPresenterMode": "Les modérateurs et les présentateurs de l'espace sont autorisés à parler. Les utilisateurs réguliers et les invités doivent demander l'autorisation de parler.",
+		"searchPresenterPlaceholder": "Tapez le nom d'un présentateur à ajouter",
+		"selectedPresenters": "Présentateurs sélectionnés",
+		"roomSettingsUpdated": "Les paramètres de la salle ont été mis à jour.",
+		"errors": {
+			"unableToGetMemberProfiles": "Impossible d'obtenir les profils des membres de l'espace.",
+			"unableToUpdateRoomSettings": "Impossible de mettre à jour les paramètres de la salle."
+		}
+	},
+	"idleStatus": {
+		"installChromeExtensionButton": "Installer l'extension Chrome",
+		"requireChromeExtensionTitle": "Extension Chrome requise",
+		"requireChromeExtensionBody": "Vous avez activé la détection d'inactivité, mais cela nécessite une extension Chrome."
+	},
+	"desktopNotifications": {
+		"enableDesktopNotifications": "Activer les notifications de bureau",
+		"disableDesktopNotifications": "Désactiver les notifications de bureau",
+		"currentlyDisabled": "Les notifications sur le bureau sont actuellement désactivées. Cliquez sur le bouton ci-dessous pour activer les notifications sur le bureau.",
+		"currentlyEnabled": "Les notifications de bureau sont actuellement activées. Cliquez sur le bouton ci-dessous pour désactiver les notifications sur le bureau.",
+		"errors": {
+			"unableToEnablePermissionBlocked": "Impossible d'activer les notifications sur le bureau, car vous avez choisi de bloquer les notifications.",
+			"unableToEnableNoTokens": "Impossible d'activer les notifications de bureau car aucun jeton n'a été renvoyé.",
+			"unableToDisableDesktopNotifications": "Impossible de désactiver les notifications sur le bureau."
+		}
+	},
+	"notificationPreferences": {
+		"notificationType": "Type de notification",
+		"showNotification": "Montrer les notifications",
+		"playSound": "Jouer son",
+		"receiveP2PChat": "Recevoir un message de chat P2P",
+		"receiveRoomChat": "Recevoir un message de discussion en salle",
+		"receiveRoomMessage": "Recevoir un message de salle",
+		"receiveSpaceMessage": "Recevoir un message spatial",
+		"knockMyRoom": "Les utilisateurs frappent dans ma chambre",
+		"askedToJoin": "Les utilisateurs me demandent de m'inscrire",
+		"memberEnterSpace": "Les membres entrent dans l'espace",
+		"guestEnterSpace": "Les invités entrent dans l'espace"
+	},
+	"receiveP2PChatNotification": {
+		"notificationTitle": "Message de {displayName}"
+	},
+	"receiveRoomChatNotification": {
+		"notificationTitle": "Message de chat de salle de {displayName}"
+	},
+	"receiveRoomMessageNotification": {
+		"notificationTitle": "Message de salle de {displayName}"
+	},
+	"receiveSpaceMessageNotification": {
+		"notificationTitle": "Message d'espace de {displayName}"
+	},
+	"knockMyRoomNotification": {
+		"notificationTitle": "Frappe",
+		"notificationBody": "{displayName} frappe."
+	},
+	"askedToJoinNotification": {
+		"notificationTitle": "Rejoindre",
+		"notificationBody": "Rejoignez {displayName} dans la salle."
+	},
+	"memberEnterSpace": {
+		"notificationTitle": "Espace entrer (membre)",
+		"notificationBody": "{displayName} est entré dans l'espace."
+	},
+	"guestEnterSpace": {
+		"notificationTitle": "Espace entrer (invité)",
+		"notificationBody": "{displayName} est entré dans l'espace."
+	},
+	"slackIntegration": {
+		"connectToSlack": "Connectez-vous à Slack",
+		"disconnectFromSlack": "Se déconnecter de Slack",
+		"currentlyNotConnected": "Vous n'êtes actuellement pas connecté à Slack. Cliquez sur le bouton ci-dessous pour vous connecter à Slack.",
+		"currentlyConnected": "Vous êtes actuellement connecté à Slack. Cliquez sur le bouton ci-dessous pour vous déconnecter de Slack.",
+		"errors": {
+			"unableToDisconnectFromSlack": "Impossible de se déconnecter de Slack."
+		}
+	},
+	"googleCalendarIntegration": {
+		"connectToGoogleCalendar": "Connectez-vous à Google Agenda",
+		"disconnectFromGoogleCalendar": "Se déconnecter de Google Agenda",
+		"currentlyNotConnected": "Vous n'êtes actuellement pas connecté à Google Agenda. Cliquez sur le bouton ci-dessous pour vous connecter à Google Agenda.",
+		"currentlyConnected": "Vous êtes actuellement connecté à Google Agenda. Cliquez sur le bouton ci-dessous pour vous déconnecter de Google Agenda.",
+		"errors": {
+			"unableToConnectToGoogleCalendar": "Impossible d'obtenir l'URL pour se connecter à Google Agenda.",
+			"unableToDisconnectFromGoogleCalendar": "Impossible de se déconnecter de Google Agenda."
+		}
+	},
+	"userSettingsModal": {
+		"profile": "Profil",
+		"changeUserSettings": "Modifier les paramètres utilisateur",
+		"userSettingsSaved": "Les paramètres utilisateur ont été enregistrés.",
+		"media": "Médias",
+		"removeBackgroundNoise": "Supprimez le bruit de fond.",
+		"voiceFocusLabel": "Supprimer le bruit de fond et l'écho des réunions",
+		"videosInsideAvatars": "Vidéos à l'intérieur des avatars",
+		"cameraBackground": "Arrière-plan flou de la caméra",
+		"blurCameraBackground": "Flou d'arrière-plan",
+		"displayVideosInsideAvatars": "Affichez les vidéos dans des avatars au lieu de la barre vidéo.",
+		"cameraQuality": "Niveau de qualité vidéo",
+		"cameraQualityLow": "Faible",
+		"cameraQualityMedium": "Moyen",
+		"cameraQualityHigh": "Haute",
+		"cameraQualityVeryHigh": "Très haut",
+		"persistMediaEnterRoom": "Gardez l'état du microphone et de la caméra lorsque vous changez de pièce.",
+		"turnMicrophoneOnEnterRoom": "Allumez mon microphone et ma caméra OFF.",
+		"turnOffMediaEnterRoom": "Éteignez mon microphone et ma caméra.",
+		"roomChange": "Lorsque je déménage dans une nouvelle pièce:",
+		"changeEmailTooltip": "Change ton adresse e-mail",
+		"enterNewEmailPlaceholder": "Entrez la nouvelle adresse e-mail",
+		"enterNewEmailAgainPlaceholder": "Saisissez à nouveau la nouvelle adresse e-mail",
+		"reloginRequired": "Après avoir cliqué sur le bouton Enregistrer ci-dessous, vous serez redirigé vers la page de connexion pour vous connecter avec votre nouvelle adresse e-mail.",
+		"automaticIdleDetection": "Utilisez la détection automatique de ralenti.",
+		"idleStateDetected": "Votre avatar affichera un halo jaune lorsqu'un état d'inactivité est détecté. Mettre à jour mon avatar en mode inactif lorsqu'aucune activité pendant",
+		"chromeExtensionRequired": "Remarque: cette fonctionnalité est uniquement prise en charge dans les navigateurs Chrome et nécessite l'installation de notre extension Google Chrome.",
+		"openChromeWebStore": "Cliquez ici pour installer l'extension de détection d'inactivité",
+		"forChrome": "pour Chrome.",
+		"idleDetection": "Détection de ralenti",
+		"notifications": "Notifications",
+		"integrations": "Intégrations",
+		"slackIntegration": "Intégration Slack",
+		"googleCalendarIntegration": "Intégration de Google Agenda",
+		"errors": {
+			"unableToInitialize": "Impossible d'obtenir les données à initialiser.",
+			"unableToChangeEmail": "Impossible de modifier l'adresse e-mail.",
+			"unableToSave": "Impossible d'enregistrer les paramètres utilisateur.",
+			"emailAlreadyTaken": "L'adresse e-mail est déjà prise. Veuillez utiliser une autre adresse e-mail.",
+			"missingNewEmails": "Les deux adresses e-mail doivent être spécifiées.",
+			"unmatchedNewEmails": "La première et la deuxième adresses e-mail doivent être identiques.",
+			"invalidNewEmail": "S'il vous plaît, mettez une adresse email valide."
+		}
+	},
+	"guestSettingsModal": {
+		"changeGuestSettings": "Modifier les paramètres d'invité",
+		"guestSettingsSaved": "Les paramètres d'invité ont été enregistrés.",
+		"errors": {
+			"unableToSave": "Impossible d'enregistrer les paramètres d'invité."
+		}
+	},
+	"setStatusModal": {
+		"setStatus": "Définir le statut",
+		"suggestions": "Suggestions (cliquez sur l'une d'entre elles ci-dessous pour la sélectionner)",
+		"statusMessagePlaceholder": "Quel est votre statut?",
+		"clearStatus": "Effacer le statut",
+		"statusUpdated": "Le statut a été mis à jour.",
+		"statusCleared": "Le statut a été effacé.",
+		"statusSuggestions": {
+			"busy": "Occupé",
+			"away": "Un moyen",
+			"doNotThinkAboutIt": "N'y pense même pas",
+			"lunch": "Déjeuner"
+		},
+		"errors": {
+			"unableToInitialize": "Impossible d'initialiser le modal.",
+			"unableToUpdateStatus": "Impossible de mettre à jour le statut.",
+			"unableToClearStatus": "Impossible d'effacer le statut."
+		}
+	},
+	"getUserModal": {
+		"joinUser": "Rejoignez {displayName}",
+		"joinWithRoomLabel": "Rejoignez-moi dans {roomLabel}.",
+		"joinWithoutRoomLabel": "Rejoignez-moi dans ma chambre.",
+		"join": "Rejoindre",
+		"notNow": "Pas maintenant",
+		"missedJoinRequest": "Vous avez manqué une demande d'inscription à {displayName} à {time}."
+	},
+	"sendMessageModal": {
+		"broadcastSpaceMessage": "Message spatial de diffusion",
+		"sendRoomMessage": "Envoyer le message de la salle",
+		"sendUserMessage": "Envoyer un message utilisateur",
+		"message": "Un message",
+		"messageToRoomWithRoomLabel": "Message à {roomLabel}",
+		"messageToRoomWithoutRoomLabel": "Message à la salle",
+		"messageToUser": "Message à {displayName}",
+		"spaceMessagePlaceholder": "Entrez un message à diffuser à tout le monde dans l'espace",
+		"roomMessagePlaceholder": "Saisissez un message à envoyer à toutes les personnes présentes dans la salle",
+		"userMessagePlaceholder": "Saisissez un message à envoyer à {displayName}",
+		"broadcastMessage": "Message de diffusion",
+		"sendMessage": "Envoyer le message"
+	},
+	"sendMessageWithThirdPartyModal": {
+		"sendMessage": "Envoyer un message à {displayName}",
+		"messagePlaceholder": "Entrez un message",
+		"sendViaWelo": "Envoyer via @: common.appName",
+		"sendViaSlack": "Envoyer via Slack",
+		"errors": {
+			"unableToSendUserNotInSpace": "Impossible d'envoyer un message maintenant car {displayName} n'est pas actuellement dans l'espace.",
+			"unableToSendNoSlackInfo": "Impossible d'obtenir les informations Slack pertinentes pour envoyer le message."
+		}
+	},
+	"checkMeetingReadinessModal": {
+		"checkMeetingReadiness": "Vérifier l'état de préparation de la réunion",
+		"tcpConnectivity": "Connectivité TCP",
+		"udpConnectivity": "Connectivité UDP",
+		"checkWillStart": "La vérification commencera sous peu.",
+		"checkPending": "Vérification en attente.",
+		"checking": "Vérification...",
+		"resultSucceeded": "À succès.",
+		"resultMeetingSessionURLsNotInitialized": "Les URL de session de réunion ne sont pas initialisées.",
+		"resultConnectionFailed": "La connexion a échoué.",
+		"resultICENegotiationFailed": "La négociation ICE a échoué.",
+		"errors": {
+			"unableToCreateChimeMeeting": "Impossible de créer une réunion Chime.",
+			"unableToInitializeChime": "Impossible d'initialiser le carillon."
+		}
+	},
+	"manageResourcesModal": {
+		"manageResources": "Gérer les ressources",
+		"createResource": "Créer une ressource",
+		"resourceCount": "Nombre de ressources: {count}",
+		"noResources": "Aucune ressource n'a été créée. Cliquez sur le bouton \"Créer une ressource\" ci-dessus pour créer une ressource.",
+		"url": "URL",
+		"spacePermission": "Les membres des espaces sélectionnés ci-dessous peuvent accéder à cette ressource",
+		"confirmRemoveResource": "Voulez-vous vraiment supprimer \"{title}\"?",
+		"resourceCreated": "La ressource a été créée.",
+		"resourceUpdated": "La ressource a été mise à jour.",
+		"resourceRemoved": "La ressource a été supprimée.",
+		"errors": {
+			"invalidTitle": "Le titre doit être spécifié et ne doit pas dépasser {maxChars} caractères.",
+			"invalidUrl": "L'URL doit être spécifiée et il doit s'agir d'une URL valide.",
+			"invalidDescription": "La description ne doit pas dépasser {maxChars} caractères.",
+			"unableToInitialize": "Impossible d'initialiser le modal.",
+			"unableToCreateResource": "Impossible de créer la ressource.",
+			"unableToUpdateResource": "Impossible de mettre à jour la ressource.",
+			"unableToRemoveResource": "Impossible de supprimer la ressource."
+		}
+	},
+	"assignRoomResourcesModal": {
+		"assignRoomResources": "Attribuer des ressources de salle",
+		"displayOption": "Option d'affichage",
+		"order": "Ordre",
+		"displayOptionEmbedded": "Montré dans l'espace @: common.appName",
+		"displayOptionNewTab": "Montré dans un nouvel onglet",
+		"resourceCount": "Nombre de ressources: {count}",
+		"roomResourcesSaved": "Les ressources de la salle ont été enregistrées.",
+		"noResources": "Aucune ressource n'a été créée. Cliquez sur l'icône de fusée en bas à gauche et sélectionnez l'élément de menu \"Gérer les ressources\" pour créer des ressources.",
+		"notAllResourcesCanBeEmbedded": "Toutes les ressources ne peuvent pas être affichées dans l'espace @: common.appName. Veuillez essayer d'ouvrir la ressource depuis la salle après avoir cliqué sur le bouton Enregistrer ci-dessous.",
+		"errors": {
+			"unableToInitialize": "Impossible d'initialiser le modal.",
+			"unableToSaveRoomResources": "Impossible d'enregistrer les ressources de la salle."
+		}
+	},
+	"selectResourceModal": {
+		"selectResource": "Sélectionnez une ressource",
+		"initializing": "Initialisation ...",
+		"clickToShow": "Cliquez sur une ressource ci-dessous pour l'afficher",
+		"errors": {
+			"unableToInitialize": "Impossible d'initialiser le modal."
+		}
+	},
+	"mediaPermissionsModal": {
+		"mediaPermissions": "Autorisations multimédias",
+		"requestPermissions": "Demander des autorisations",
+		"requestPermissionsWithButtonMessage": "Pour que les autres puissent vous voir et vous entendre, votre navigateur demandera l'accès à votre caméra et à votre microphone. Veuillez cliquer sur le bouton «Demander des autorisations» ci-dessous et suivre les instructions de la vidéo ci-dessus.",
+		"requestPermissionsWithoutButtonMessage": "Pour que les autres puissent vous voir et vous entendre, votre navigateur demandera l'accès à votre caméra et à votre microphone. Veuillez suivre les instructions de la vidéo ci-dessus.",
+		"permissionsDeniedMessage": "Vous avez refusé l'accès à votre caméra et à votre microphone. Veuillez suivre les instructions de la vidéo ci-dessus pour accorder l'accès."
+	},
+	"selectMediaDevicesModal": {
+		"selectMediaDevices": "Sélectionnez les périphériques multimédias",
+		"initializingVideo": "Initialisation de la vidéo ...",
+		"testAudioTooltip": "Jouez un son de test",
+		"enterSpace": "Entrez dans l'espace"
+	},
+	"userMessageToast": {
+		"reply": "Réponse",
+		"errors": {
+			"unableToSendReply": "Impossible d'envoyer une réponse",
+			"senderNotInSpace": "L'expéditeur de ce message n'est pas actuellement dans l'espace."
+		}
+	},
+	"knockAllowInToast": {
+		"userKnocking": "{displayName} frappe.",
+		"allowIn": "Permettre à"
+	},
+	"requestToTalkToast": {
+		"requestToTalk": "{displayName} demande l'autorisation de parler."
+	},
+	"installDesktopApp": {
+		"installApp": "Installer l'application de bureau",
+		"installAppPrompt": "@: common.appName peut être installé en tant qu'application de bureau et s'ouvrira dans sa propre fenêtre. Voulez-vous installer l'application de bureau @: common.appName?"
+	},
+	"updateChecker": {
+		"updateAvailable": "Mise à jour disponible!",
+		"newContentAvailable": "Une nouvelle version de @: common.appName est disponible.",
+		"reload": "Recharger maintenant"
+	},
+	"contextMenu": {
+		"knockWithRoomLabel": "Frappez sur {roomLabel}",
+		"knockWithoutRoomLabel": "@: common.knock"
+	},
+	"mapContextMenu": {
+		"menuHeader": "Menu de la chambre",
+		"seatCount": "(1 siège) | ({count} sièges)",
+		"enterRoom": "Entrer dans la chambre",
+		"sendRoomMessage": "Envoyer le message de la salle",
+		"lockWithRoomLabel": "Verrouiller {roomLabel}",
+		"lockWithoutRoomLabel": "Lock Room",
+		"unlockWithRoomLabel": "Déverrouiller {roomLabel}",
+		"unlockWithoutRoomLabel": "Déverrouiller la salle",
+		"setHomeRoom": "Définir la pièce d'origine",
+		"unsetHomeRoom": "Désactiver la pièce d'origine",
+		"changeRoomSettings": "Modifier les paramètres de la pièce",
+		"assignRoomResources": "Attribuer des ressources de salle",
+		"removeRoomLabel": "Supprimer l'étiquette de la pièce",
+		"homeRoomSet": "La pièce de la maison a été définie.",
+		"homeRoomUnset": "La pièce d'origine n'a pas été réglée.",
+		"roomLabelRemoved": "Le libellé de la salle a été supprimé",
+		"confirmRemoveRoomLabel": "Voulez-vous vraiment supprimer le libellé de la salle?",
+		"confirmSetHomeRoomWithRoomLabel": "Voulez-vous vraiment définir votre pièce à domicile sur {roomLabel}?",
+		"confirmSetHomeRoomWithoutRoomLabel": "Voulez-vous vraiment définir la pièce de votre domicile?",
+		"errors": {
+			"unableToSetHomeRoom": "Impossible de définir la pièce d'origine.",
+			"unableToUnsetHomeRoom": "Impossible de désactiver la pièce d'origine.",
+			"unableToRemoveRoomLabel": "Impossible de supprimer l'étiquette de la pièce."
+		}
+	},
+	"avatarContextMenu": {
+		"menuHeader": "Menu utilisateur",
+		"setStatus": "Définir le statut",
+		"askToJoin": "Demander à {displayName} de se joindre",
+		"sendMessage": "Envoyer le message",
+		"muteMicrophone": "Couper le microphone",
+		"muteMicrophoneSent": "Une demande de mise en sourdine du microphone a été envoyée à {displayName}.",
+		"turnOffCamera": "Éteindre la caméra",
+		"turnOffCameraSent": "Une demande de désactivation de la caméra a été envoyée à {displayName}.",
+		"revokePermissionToTalk": "Révoquer l'autorisation de parler",
+		"revokePermissionToTalkSent": "Une demande de révocation de l'autorisation de parler a été envoyée à {displayName}.",
+		"disconnectUser": "Déconnecter {displayName}",
+		"disconnectGuest": "Déconnecter l'invité",
+		"confirmDisconnectUser": "Voulez-vous vraiment déconnecter {displayName}?",
+		"disconnectUserSent": "Une demande de déconnexion a été envoyée à {displayName}.",
+		"errors": {
+			"unableToSendDisconnectUser": "Impossible d'envoyer une demande de déconnexion à {displayName}.",
+			"unableToSendMuteMicrophone": "Impossible d'envoyer une demande de mise en sourdine du microphone à {displayName}.",
+			"unableToSendTurnOffCamera": "Impossible d'envoyer une demande de désactivation de l'appareil photo à {displayName}.",
+			"unableToSendRevokePermissionToTalk": "Impossible d'envoyer une demande de révocation de l'autorisation de parler à {displayName}."
+		}
+	},
+	"calendar": {
+		"upcomingCalendarEvents": "Prochains événements du calendrier",
+		"localTime": "Heure locale: {localTime}",
+		"eventAllDayInProgress": "En cours du {startDate} {startTime} au {endDate} {endTime}",
+		"eventAllDayNotInProgress": "{startDate} {startTime} à {endDate} {endTime}",
+		"eventInProgress": "En cours jusqu'au {endTime}",
+		"eventToday": "Aujourd'hui de {startTime} à {endTime}",
+		"eventNotToday": "{startDate} du {startTime} au {endTime}"
+	},
+	"timeStrings": {
+		"idleFor": "Inactif pour",
+		"seconds": "secondes",
+		"1minuteAgo": "1 minute",
+		"1minuteFromNow": "Dans 1 minute",
+		"minute": "minute",
+		"minutes": "minutes",
+		"1hourAgo": "1 heure",
+		"1hourFromNow": "Dans 1 heure",
+		"hours": "les heures",
+		"yesterday": "hier",
+		"tomorrow": "demain",
+		"days": "journées",
+		"lastWeek": "La semaine dernière",
+		"nextWeek": "la semaine prochaine",
+		"weeks": "semaines",
+		"lastMonth": "le mois dernier",
+		"nextMonth": "le mois prochain",
+		"months": "mois",
+		"lastYear": "l'année dernière",
+		"nextYear": "L'année prochaine",
+		"years": "années",
+		"justNow": "juste maintenant",
+		"ago": "depuis",
+		"fromNow": "à partir de maintenant"
+	}
+}
